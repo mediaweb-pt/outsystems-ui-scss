@@ -1,14 +1,11 @@
 {
-  "name": "rocket_design_sys",
+  "name": "outsystems-ui-scss",
   "version": "1.0.0",
-  "description": "Mediaweb creation design system ",
+  "description": "Outsystems UI Reactive version converted to SCSS",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "mediaweb.ddns.net:8000/mediaweb/rocket-design-sys"
+    "url": "https://github.com/mediaweb-pt/outsystems-ui-scss"
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
@@ -23,5 +20,5 @@
     "gulp": "^4.0.2"
   },
   "author": "Mediaweb Creations Lda",
-  "license": "MIT"
+  "license": "GNU General Public License v3.0"
 }
