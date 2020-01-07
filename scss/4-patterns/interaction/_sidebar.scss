@@ -1,0 +1,38 @@
+/* $4.3.15 - Patterns - Interaction - Sidebar */
+.sidebar {
+  background-color: var(--color-neutral-0);
+  box-shadow: var(--shadow-l);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: var(--space-none);
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(102%);
+  transition: all 130ms ease-in;
+  width: 500px;
+  will-change: transform;
+  z-index: 140;
+  -servicestudio-bottom: 20px;
+  -servicestudio-height: auto;
+
+  &.sidebar-open {
+    transform: none;
+    transition: all 330ms ease-out;
+    will-change: transform;
+  }
+}
+
+.sidebar-header,
+.sidebar-content {
+  padding: var(--space-base) var(--space-m);
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.phone .sidebar { width: 85vw; }

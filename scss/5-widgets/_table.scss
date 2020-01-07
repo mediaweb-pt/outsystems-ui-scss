@@ -1,0 +1,221 @@
+/* $5.3 - Widgets - Table */
+.table {
+  border: var(--border-size-s) solid var(--color-neutral-4);
+  border-radius: var(--border-radius-soft);
+  border-spacing: 0;
+  empty-cells: show;
+  white-space: nowrap;
+  width: 100%;
+  word-break: keep-all;
+  
+  &.pagination-button.is--active {
+    background: var(--color-neutral-4);
+  }
+}
+
+.table-header th {
+  background-color: #fff;
+  border-bottom: var(--border-size-s) solid var(--color-neutral-4);
+  color: var(--color-neutral-8);
+  font-weight: var(--font-semi-bold);
+  height: 48px;
+  padding: var(--space-none) var(--space-m);
+  text-align: left;
+
+  &:first-child {
+    border-radius: var(--border-radius-soft) var(--border-radius-none) var(--border-radius-none) var(--border-radius-none);
+  }
+
+  &:last-child {
+    border-radius: var(--border-radius-none) var(--border-radius-soft) var(--border-radius-none) var(--border-radius-none);
+  }
+
+  &.sortable {
+    cursor: pointer;
+  }
+}
+
+.table-row td {
+  background: var(--color-neutral-0);
+  border-bottom: 1px solid var(--color-neutral-4);
+  height: 56px;
+  padding: var(--space-s) var(--space-m);
+  vertical-align: inherit;
+}
+
+.table-row-small td {
+  height: 48px;
+}
+
+.table-row-medium td {
+  height: 64px;
+}
+
+.table-row-stripping:nth-child(even) td {
+  background: var(--color-neutral-1);
+}
+
+.table-row:hover td {
+  background: var(--color-neutral-2);
+}
+
+.table{
+  .table-row:last-child{
+    td {
+      border-bottom: none;
+      
+      &:first-child {
+        border-radius: var(--border-radius-none) var(--border-radius-none) var(--border-radius-none) var(--border-radius-soft);
+      }
+      &:last-child {
+        border-radius: var(--border-radius-none) var(--border-radius-none) var(--border-radius-soft) var(--border-radius-none);
+      }
+    }
+  }
+}
+
+.table-row.table-row-selected td {
+  background: var(--color-primary) var(--color-primary-lightest);
+}
+
+.phone,
+.tablet {
+  .table {
+    overflow: hidden;
+  }
+}
+
+.phone{
+  thead {
+    display: none;
+  }
+
+  tr,
+  td {
+    display: block;
+  }
+
+  td {
+    border-bottom: 0;
+    display: flex;
+    height: auto;
+    position: relative;
+    text-align: left !important;
+    width: 100% !important;
+
+    &:before {
+      content: attr(data-header);
+      display: block;
+      font-weight: bold;
+      margin-right: 10px;
+      max-width: 110px;
+      min-width: 110px;
+      word-break: break-word;
+    }
+  }
+  tr {
+    border-bottom: 1px solid var(--color-neutral-4);
+  }
+}
+
+td:not([data-header]):before {
+  display: none;
+}
+
+.sortable-icon {
+  display: inline-block;
+  height: 11px;
+  margin-left: var(--space-s);
+  position: relative;
+  width: 10px;
+
+  &:before,
+  &:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    content: '';
+    left: 0;
+    position: absolute;
+  }
+  
+  &:before {
+    border-bottom: 4px solid var(--color-neutral-8);
+  }
+
+  &:after {
+    border-top: 4px solid var(--color-neutral-8);
+    bottom: 0;
+  }
+}
+
+
+.desktop .table-header th.sortable:hover,
+.table-header th.sorted{
+  color: var(--color-primary);
+
+  .sortable-icon{
+    &:before {
+      border-bottom: 4px solid var(--color-primary);
+    }
+    &:after {
+      border-top: 4px solid var(--color-primary);
+    }
+  }
+}
+
+.list-updating {
+  position: relative;
+  height: 40px;
+  margin-top: var(--space-m);
+  
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid var(--color-neutral-5);
+    border-top-color: var(--color-neutral-7);
+    animation: spin 1s infinite linear, fade 300ms ease;
+    box-sizing: border-box;
+  }
+}
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  0%, 50% {
+    opacity: 0;
+  }    
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

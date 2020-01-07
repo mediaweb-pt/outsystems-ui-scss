@@ -1,0 +1,57 @@
+/* $4.4.6 - Patterns - Navigation - Timeline */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .timeline-content {
+    flex: 1;
+    margin-bottom: var(--space-xl);
+  }
+}
+
+.timeline-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+
+  @at-root [data-block*="TimelineItem"]:last-child & {
+   flex-direction: column;
+ }
+}
+
+.timeline-icon-line {
+  background-color: var(--color-neutral-5);
+  flex: 1;
+  margin: var(--space-s) var(--space-none) var(--space-s);
+  width: 1px;
+
+  @at-root [data-block*="TimelineItem"]:last-child &{
+    display: none;
+  }
+}
+
+.timeline-icon-container {
+  align-items: center;
+  border-radius: var(--border-radius-circle);
+  color: var(--color-neutral-0);
+  display: flex;
+  font-size: var(--font-size-xs);
+  height: 24px;
+  justify-content: center;
+  margin: var(--space-none) var(--space-base);
+  text-align: center;
+  width: 24px;
+
+  &:empty{
+    height: 8px;
+    margin-top: var(--space-xs);
+    width: 8px;
+  }
+}
+
+.timeline-right,
+.timeline-content-inner {
+  color: var(--color-neutral-8);
+}

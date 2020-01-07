@@ -1,0 +1,73 @@
+/* $4.1.2 - Patterns - Adaptive - Gallery */
+.grid-gallery,
+.grid-gallery .list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: var(--grid-gap);
+  -ms-grid-columns: 1fr 3 1fr 3 1fr;
+  grid-template-columns: repeat(var(--grid-desktop), 1fr);
+}
+
+.tablet{
+  .grid-gallery{
+    &,
+    .list{
+      grid-template-columns: repeat(var(--grid-tablet), 1fr);
+    }
+
+    .list {
+      grid-column-end: calc(var(--grid-tablet) + 1);
+    }
+  }
+}
+
+.phone{
+  .grid-gallery{
+    &,
+    .list{
+      grid-template-columns: repeat(var(--grid-phone), 1fr);
+    }
+
+    .list {
+      grid-column-end: calc(var(--grid-phone) + 1);
+    }
+  }
+}
+
+.grid-gallery{
+  .list{
+    grid-column-end: calc(var(--grid-desktop) + 1);
+
+    &.list-group {
+      grid-column-start: 1;
+      overflow: initial;
+    }
+
+    .card,
+    .animate {
+      height: 100%;
+    }
+  }
+
+  > * {
+    margin-top: 0;
+  }
+  > img {
+    object-fit: cover;
+  }
+}
+
+/* Edge fix for lists */
+.edge{
+  .grid-gallery .list {
+    grid-column-end: var(--grid-list-desktop);
+  }
+
+  .tablet .grid-gallery .list {
+    grid-column-end: var(--grid-list-tablet);
+  }
+
+  .phone .grid-gallery .list {
+    grid-column-end: var(--grid-list-phone);
+  }
+}

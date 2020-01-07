@@ -1,0 +1,38 @@
+/* $5.6 - Widgets - Upload */
+[data-upload] {
+  align-items: center;
+  background: var(--color-neutral-0);
+  border: var(--border-size-s) solid var(--color-neutral-4);
+  border-radius: var(--border-radius-soft);
+  color: var(--color-neutral-9);
+  display: flex;
+  font-size: var(--font-size-s);
+  margin-bottom: 0;
+  min-height: auto;
+  padding: var(--space-base);
+  position: relative;
+
+  [data-icon] {
+    background-color: transparent;
+    color: var(--color-neutral-5);
+    line-height: 1;
+    margin-right: var(--space-base);
+    width: auto;
+  }
+  &.uploaded [data-icon] {
+    background-color: transparent;
+  }
+  &.upload-image-withoverlay {
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+
+    .change-image {
+      background-color: transparent;
+      color: var(--color-primary);
+      height: auto;
+      margin-top: var(--space-base);
+      opacity: 1;
+      position: relative;
+    }
+  }
+}

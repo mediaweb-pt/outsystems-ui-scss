@@ -1,0 +1,216 @@
+// this file contains the scss variables
+
+/* Typography - Size */
+$font-size-display: 36px !default;
+    
+$font-size-h1: 32px !default;
+$font-size-h2: 28px !default;
+$font-size-h3: 26px !default;
+$font-size-h4: 22px !default;
+$font-size-h5: 20px !default;
+$font-size-h6: 18px !default;
+
+$font-size-xl: 24px !default;
+$font-size-l: 20px !default;
+$font-size-m: 18px !default;
+$font-size-base: 16px !default;
+$font-size-s: 14px !default;
+$font-size-xs: 12px !default;
+
+/* Typography - Weight */
+$font-light: 300 !default;
+$font-regular: 400 !default;
+$font-semi-bold: 600 !default;
+$font-bold: 700 !default;
+
+$colors:
+  'primary',
+  'secondary',
+  'red', 
+  'pink', 
+  'grape', 
+  'violet', 
+  'indigo', 
+  'blue', 
+  'cyan', 
+  'teal', 
+  'green', 
+  'lime', 
+  'yellow', 
+  'orange';
+
+$color-primary: #0070AF !default;
+$color-primary-lightest:lighten($color-primary, 40%);
+$color-primary-lighter: lighten($color-primary, 25%);
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 5%);
+$color-primary-darker: darken($color-primary, 10%);
+$color-primary-darkest: darken($color-primary, 15%);
+$color-primary-hover: $color-primary-light;
+$color-primary-selected: rgba(112, 48, 160, 0.12);
+
+$color-secondary: #FF9300 !default;
+$color-secondary-lightest:lighten($color-secondary, 40%);
+$color-secondary-lighter: lighten($color-secondary, 25%);
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-secondary-dark: darken($color-secondary, 5%);
+$color-secondary-darker: darken($color-secondary, 10%);
+$color-secondary-darkest: darken($color-secondary, 15%);
+
+
+
+$color-red: #c92a2a !default;
+$color-pink: #d6336c !default;
+$color-grape: #ae3ec9 !default;
+$color-violet: #7048e8 !default;
+$color-indigo: #4263eb !default;
+$color-blue: #1a79cb !default;
+$color-cyan: #0d8091 !default;
+$color-teal: #087f5b !default;
+$color-green: #37b24d !default;
+$color-lime: #74b816 !default;
+$color-orange: #f76707 !default;
+$color-yellow: #f59f00 !default;
+
+
+
+$color-red-lightest:lighten($color-red, 40%);
+$color-red-lighter: lighten($color-red, 25%);
+$color-red-light: lighten($color-red, 15%);
+$color-red-dark: darken($color-red, 5%);
+$color-red-darker: darken($color-red, 10%);
+$color-red-darkest: darken($color-red, 15%);
+
+$color-pink-lightest: lighten($color-pink, 40%);
+$color-pink-lighter: lighten($color-pink, 25%);
+$color-pink-light: lighten($color-pink, 15%);
+$color-pink-dark: darken($color-pink, 5%);
+$color-pink-darker: darken($color-pink, 10%);
+$color-pink-darkest: darken($color-pink, 15%);
+
+$color-grape-lightest: lighten($color-grape, 40%);
+$color-grape-lighter: lighten($color-grape, 25%);
+$color-grape-light: lighten($color-grape, 15%);
+$color-grape-dark: darken($color-grape, 5%);
+$color-grape-darker: darken($color-grape, 15%);
+$color-grape-darkest: darken($color-grape, 20%);
+
+$color-violet-lightest: lighten($color-violet, 35%);
+$color-violet-lighter: lighten($color-violet, 25%);
+$color-violet-light: lighten($color-violet, 15%);
+$color-violet-dark: darken($color-violet, 5%);
+$color-violet-darker: darken($color-violet, 10%);
+$color-violet-darkest: darken($color-violet, 15%);
+
+$color-indigo-lightest: lighten($color-indigo, 35%);
+$color-indigo-lighter:lighten($color-indigo, 25%);
+$color-indigo-light: lighten($color-indigo, 15%);
+$color-indigo-dark: darken($color-indigo, 5%);
+$color-indigo-darker:darken($color-indigo, 10%);
+$color-indigo-darkest: darken($color-indigo, 15%);
+
+$color-blue-lightest: lighten($color-blue, 40%);
+$color-blue-lighter: lighten($color-blue, 25%);
+$color-blue-light: lighten($color-blue, 15%);
+$color-blue-dark:darken($color-blue, 5%);
+$color-blue-darker: darken($color-blue, 10%);
+$color-blue-darkest: darken($color-blue, 15%);
+
+$color-cyan-lightest: lighten($color-cyan, 64%);
+$color-cyan-lighter: lighten($color-cyan, 48%);
+$color-cyan-light : lighten($color-cyan, 32%);
+$color-cyan-dark: darken($color-cyan, 6%);
+$color-cyan-darker: darken($color-cyan, 9%);
+$color-cyan-darkest: darken($color-cyan, 15%);
+
+$color-teal-lightest: lighten($color-teal, 69%);
+$color-teal-lighter: lighten($color-teal, 51%);
+$color-teal-light: lighten($color-teal, 36%);
+$color-teal-dark: darken($color-teal, 6%);
+$color-teal-darker: darken($color-teal, 9%);
+$color-teal-darkest: darken($color-teal, 12%);
+
+$color-green-lightest: lighten($color-green, 40%);
+$color-green-lighter: lighten($color-green, 25%);
+$color-green-light: lighten($color-green, 15%);
+$color-green-dark: darken($color-green, 5%);
+$color-green-darker : darken($color-green, 10%);
+$color-green-darkest : darken($color-green, 15%);
+
+$color-lime-lightest: lighten($color-lime, 35%);
+$color-lime-lighter: lighten($color-lime, 25%);
+$color-lime-light: lighten($color-lime, 15%);
+$color-lime-dark: darken($color-lime, 5%);
+$color-lime-darker: darken($color-lime, 10%);
+$color-lime-darkest: darken($color-lime, 15%);
+
+$color-orange-lightest: lighten($color-orange, 40%);
+$color-orange-lighter: lighten($color-orange, 25%);
+$color-orange-light: lighten($color-orange, 15%);
+$color-orange-dark: darken($color-orange, 5%);
+$color-orange-darker: darken($color-orange, 10%);
+$color-orange-darkest: darken($color-orange, 15%);
+
+$color-yellow-lightest: lighten($color-yellow, 40%);
+$color-yellow-lighter: lighten($color-yellow, 25%);
+$color-yellow-light: lighten($color-yellow, 15%);
+$color-yellow-dark: darken($color-yellow, 5%);
+$color-yellow-darker: darken($color-yellow, 10%);
+$color-yellow-darkest:darken($color-yellow, 15%);
+
+$color-neutral-0: #ffffff !default;
+$color-neutral-1: #f8f9fa !default;
+$color-neutral-2: #f1f3f5 !default;
+$color-neutral-3: #e9ecef !default;
+$color-neutral-4: #dee2e6 !default;
+$color-neutral-5: #ced4da !default;
+$color-neutral-6: #adb5bd !default;
+$color-neutral-7: #868e96 !default;
+$color-neutral-8: #5c656d !default;
+$color-neutral-9: #343a40 !default;
+$color-neutral-10: #15181a !default;
+
+
+$color-error-light: #fceaea !default;
+$color-error: #e03131 !default;
+
+$color-warning-light: #fdf6e5 !default;
+$color-warning: #e9a100 !default;
+
+$color-success-light: #eaf3eb !default;
+$color-success: #2a843c !default;
+
+$color-info-light: #e5f5fc !default;
+$color-info: #009dde !default;
+
+
+$space-none: 0 !default;
+$space-xs: 4px !default;
+$space-s: 8px !default;
+$space-base: 16px !default;
+$space-m: 24px !default;
+$space-l: 32px !default;
+$space-xl: 40px !default;
+$space-xxl: 48px !default;
+
+
+$border-radius-none: 0 !default;
+$border-radius-soft: 4px !default;
+$border-radius-rounded: 100px !default;
+$border-radius-circle: 100% !default;
+
+$border-size-none: 0 !default;
+$border-size-s: 1px !default;
+$border-size-m: 2px !default;
+$border-size-l: 3px !default;
+
+$shadow-none: none !default;
+$shadow-xs: 0 1px 2px rgba(0, 0, 0, .1) !default;
+$shadow-s: 0 2px 4px rgba(0, 0, 0, .1) !default;
+$shadow-m: 0 4px 6px rgba(0, 0, 0, .1) !default;
+$shadow-l: 0 6px 8px rgba(0, 0, 0, .1) !default;
+$shadow-xl: 0 8px 10px rgba(0, 0, 0, .1) !default;
+
+$color-background-body: #f3f6f8 !default;
+$header-size: 56px !default;
+$side-menu-size: 300px !default;

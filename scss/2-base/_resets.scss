@@ -1,0 +1,117 @@
+ /* ================================================================ */
+/*  $1 - Resets                                                     */
+/* ================================================================ */
+ 
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {    
+  color: var(--color-neutral-9);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -servicestudio-overflow: hidden;
+}
+
+body {    
+  background-color: var(--color-background-body);
+  font-size: var(--font-size-s);
+  line-height: 1.5;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+:focus {
+  outline: 0;
+}
+
+input, 
+textarea, 
+select, 
+button {
+  appearance: none;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.25;
+  margin: 0;
+}
+
+input {
+  &[type="time"],
+  &[type="date"],
+  &[type="datetime"],
+  &[type="datetime-local"],
+  &[type="time"],
+  &[type="time"]:empty{
+    display: inline-flex;
+  }
+}
+
+[type="checkbox"], 
+[type="radio"] {
+  border: 0;
+  padding: 0;
+}
+
+[type="checkbox"]:not(.checkbox) {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"]:not(.radio-button) {
+  appearance: radio;
+}
+
+[type="number"]::-webkit-inner-spin-button, 
+[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  height: auto;
+}
+
+[type="search"] {
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button, 
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+}
+
+div[onclick] {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+figure{
+  margin:0;
+}

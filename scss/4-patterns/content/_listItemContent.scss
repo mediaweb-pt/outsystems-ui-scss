@@ -1,0 +1,32 @@
+/* $4.2.11 - Patterns - Content - ListItemContent  */
+.list-item-content {
+  align-items: center;
+  display: flex;
+
+  &-title{
+    color: var(--color-neutral-10);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-semi-bold);
+  }
+
+  &-text{ color: var(--color-neutral-7); }
+
+  &-left{
+    max-width: 120px;
+    padding-right: var(--space-m);
+  }
+
+  &-center{
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &-right{ padding-left: var(--space-m); }
+}
+
+.list-item-content-title,
+.list-item-content-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

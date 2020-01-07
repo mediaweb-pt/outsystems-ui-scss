@@ -1,0 +1,20 @@
+/* $4.2.12 - Patterns - Content - Section */
+.section-title {
+  background-color: transparent;
+  border-bottom: var(--border-size-s) solid var(--color-neutral-4);
+  color: var(--color-neutral-9);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-semi-bold);
+  padding: var(--space-none) var(--space-none) var(--space-s) var(--space-none);
+  position: relative;
+  text-transform: none;
+  width: 100%;
+}
+
+.section-group {
+  .is--sticky .section-title{ position: sticky; }
+
+  .section-title { background-color: var(--color-background-body); }
+}
+
+.section-content { padding: var(--space-s) var(--space-none) var(--space-none); }

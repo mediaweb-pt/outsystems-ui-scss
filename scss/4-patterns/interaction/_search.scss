@@ -1,0 +1,32 @@
+/* $4.3.14 - Patterns - Interaction - Search */
+.search {
+  position: relative;
+
+  .form-control[data-input] { padding-left: var(--space-xl); }
+  
+  &:empty { -servicestudio-height: 40px; }
+}
+
+.search-input {
+  position: relative;
+
+  &:empty {
+    -servicestudio-height: 40px;
+    -servicestudio-background-color: #fff;
+    -servicestudio-border-radius: 4px;
+  }
+
+  &:after {
+    align-items: center;
+    color: var(--color-neutral-6);
+    content: "\f002";
+    display: flex;
+    font: normal normal normal 14px/1 FontAwesome;
+    height: 100%;
+    left: 16px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.search-preview { display: none; }

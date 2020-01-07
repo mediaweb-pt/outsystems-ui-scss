@@ -1,0 +1,209 @@
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+
+:root {
+
+    /* Typography - Size */
+    --font-size-display: #{$font-size-display};
+    
+    --font-size-h1: #{$font-size-h1};
+    --font-size-h2: #{$font-size-h2};
+    --font-size-h3: #{$font-size-h3};
+    --font-size-h4: #{$font-size-h4};
+    --font-size-h5: #{$font-size-h5};
+    --font-size-h6: #{$font-size-h6};
+
+    --font-size-xl: #{$font-size-xl};
+    --font-size-l: #{$font-size-l}; 
+    --font-size-m: #{$font-size-m}; 
+    --font-size-base: #{$font-size-base};
+    --font-size-s: #{$font-size-s};
+    --font-size-xs: #{$font-size-xs};
+
+    /* Typography - Weight */
+    --font-light: #{$font-light};
+    --font-regular: #{$font-regular};
+    --font-semi-bold: #{$font-semi-bold};
+    --font-bold: #{$font-bold};
+    
+    /* Color - Brand */
+
+    --color-primary-lightest: #{$color-primary-lightest};
+    --color-primary-lighter: #{$color-primary-lighter};
+    --color-primary-light: #{$color-primary-light};
+    --color-primary: #{$color-primary};
+    --color-primary-dark: #{$color-primary-dark};
+    --color-primary-darker: #{$color-primary-darker};
+    --color-primary-darkest: #{$color-primary-darkest};
+
+    --color-secondary-lightest: #{$color-secondary-lightest};
+    --color-secondary-lighter: #{$color-secondary-lighter};
+    --color-secondary-light: #{$color-secondary-light};
+    --color-secondary: #{$color-secondary};
+    --color-secondary-dark: #{$color-secondary-dark};
+    --color-secondary-darker: #{$color-secondary-darker};
+    --color-secondary-darkest: #{$color-secondary-darkest};
+  
+    --color-primary-hover: #{$color-primary-hover};
+    --color-primary-selected: #{$color-primary-selected};
+
+    /* Color - Extended */
+    --color-red-lightest: #{$color-red-lightest};
+    --color-red-lighter: #{$color-red-lighter};
+    --color-red-light: #{$color-red-light};
+    --color-red:#{$color-red};
+    --color-red-dark: #{$color-red-dark};
+    --color-red-darker: #{$color-red-darker};
+    --color-red-darkest: #{$color-red-darkest};
+    
+    --color-pink-lightest: #{$color-pink-lightest};
+    --color-pink-lighter: #{$color-pink-lighter};
+    --color-pink-light: #{$color-pink-light};
+    --color-pink: #{$color-pink};
+    --color-pink-dark: #{$color-pink-dark};
+    --color-pink-darker: #{$color-pink-darker};
+    --color-pink-darkest: #{$color-pink-darkest};
+    
+    --color-grape-lightest: #{$color-grape-lightest};
+    --color-grape-lighter: #{$color-grape-lighter};
+    --color-grape-light: #{$color-grape-light};
+    --color-grape: #{$color-grape};
+    --color-grape-dark: #{$color-grape-dark};
+    --color-grape-darker:#{$color-grape-darker};
+    --color-grape-darkest: #{$color-grape-darkest};
+    
+    --color-violet-lightest: #{$color-violet-lightest};
+    --color-violet-lighter: #{$color-violet-lighter};
+    --color-violet-light: #{$color-violet-light};
+    --color-violet:#{$color-violet};
+    --color-violet-dark: #{$color-violet-dark};
+    --color-violet-darker: #{$color-violet-darker};
+    --color-violet-darkest: #{$color-violet-darkest};
+   
+    --color-indigo-lightest: #{$color-indigo-lightest};
+    --color-indigo-lighter:#{$color-indigo-lighter};
+    --color-indigo-light: #{$color-indigo-light};
+    --color-indigo: #{$color-indigo};
+    --color-indigo-dark: #{$color-indigo-dark};
+    --color-indigo-darker:#{$color-indigo-darker};
+    --color-indigo-darkest: #{$color-indigo-darkest};
+    
+    --color-blue-lightest: #{$color-blue-lightest};
+    --color-blue-lighter: #{$color-blue-lighter};
+    --color-blue-light: #{$color-blue-light};
+    --color-blue: #{$color-blue};
+    --color-blue-dark:#{$color-blue-dark};
+    --color-blue-darker: #{$color-blue-darker};
+    --color-blue-darkest: #{$color-blue-darkest};
+    
+    --color-cyan-lightest: #{$color-cyan-lightest};
+    --color-cyan-lighter: #{$color-cyan-lighter};
+    --color-cyan-light:  #{$color-cyan-light};
+    --color-cyan: #{$color-cyan};
+    --color-cyan-dark: #{$color-cyan-dark};
+    --color-cyan-darker: #{$color-cyan-darker};
+    --color-cyan-darkest: #{$color-cyan-darkest};
+    
+    --color-teal-lightest: #{$color-teal-lightest};
+    --color-teal-lighter: #{$color-teal-lighter};
+    --color-teal-light: #{$color-teal-light};
+    --color-teal:#{$color-teal};
+    --color-teal-dark: #{$color-teal-dark};
+    --color-teal-darker:#{$color-teal-darker};
+    --color-teal-darkest: #{$color-teal-darkest};
+    
+    --color-green-lightest: #{$color-green-lightest};
+    --color-green-lighter: #{$color-green-lighter};
+    --color-green-light: #{$color-green-light};
+    --color-green: #{$color-green};
+    --color-green-dark: #{$color-green-dark};
+    --color-green-darker: #{$color-green-darker};
+    --color-green-darkest:  #{$color-green-darkest};
+    
+    --color-lime-lightest: #{$color-lime-lightest};
+    --color-lime-lighter: #{$color-lime-lighter};
+    --color-lime-light: #{$color-lime-light};
+    --color-lime: #{$color-lime};
+    --color-lime-dark: #{$color-lime-dark};
+    --color-lime-darker: #{$color-lime-darker};
+    --color-lime-darkest: #{$color-lime-darkest};
+    
+    --color-orange-lightest: #{$color-orange-lightest};
+    --color-orange-lighter:#{$color-orange-lighter};
+    --color-orange-light: #{$color-orange-light};
+    --color-orange:#{ $color-orange};
+    --color-orange-dark: #{$color-orange-dark};
+    --color-orange-darker:#{$color-orange-darker};
+    --color-orange-darkest: #{$color-orange-darkest};
+    
+    --color-yellow-lightest: #{$color-yellow-lightest};
+    --color-yellow-lighter: #{$color-yellow-lighter};
+    --color-yellow-light: #{$color-yellow-light};
+    --color-yellow: #{$color-yellow};
+    --color-yellow-dark: #{$color-yellow-dark};
+    --color-yellow-darker: #{$color-yellow-darker};
+    --color-yellow-darkest:#{$color-yellow-darkest};
+    
+    /* Color - Neutral */
+    --color-neutral-0: #{$color-neutral-0};
+    --color-neutral-1: #{$color-neutral-1};
+    --color-neutral-2: #{$color-neutral-2};
+    --color-neutral-3: #{$color-neutral-3};
+    --color-neutral-4: #{$color-neutral-4};
+    --color-neutral-5: #{$color-neutral-5};
+    --color-neutral-6: #{$color-neutral-6};
+    --color-neutral-7: #{$color-neutral-7};
+    --color-neutral-8: #{$color-neutral-8};
+    --color-neutral-9: #{$color-neutral-9};
+    --color-neutral-10: #{$color-neutral-10};
+    
+    /* Color - Semantic */
+    --color-error-light: #{$color-error-light};
+    --color-error: #{$color-error};
+    
+    --color-warning-light: #{$color-warning-light};
+    --color-warning: #{$color-warning};
+    
+    --color-success-light: #{$color-success-light};
+    --color-success: #{$color-success};
+    
+    --color-info-light: #{$color-info-light};
+    --color-info: #{$color-info};
+
+    /* Space - Sizes */
+    --space-none: #{$space-none};
+    --space-xs: #{$space-xs};
+    --space-s: #{$space-s};
+    --space-base: #{$space-base};
+    --space-m: #{$space-m};
+    --space-l: #{$space-l};
+    --space-xl: #{$space-xl};
+    --space-xxl: #{$space-xxl};
+    
+    /* Border Radius */
+    --border-radius-none: #{$border-radius-none};
+    --border-radius-soft: #{$border-radius-soft};
+    --border-radius-rounded: #{$border-radius-rounded};
+    --border-radius-circle: #{$border-radius-circle};
+    
+    /* Border Size */
+    --border-size-none: #{$border-size-none};
+    --border-size-s: #{$border-size-s};
+    --border-size-m: #{$border-size-m};
+    --border-size-l: #{$border-size-l};
+
+    /* Elevation / Shadow */
+    --shadow-none: #{$shadow-none};
+    --shadow-xs: #{$shadow-xs};
+    --shadow-s: #{$shadow-s};
+    --shadow-m: #{$shadow-m};
+    --shadow-l: #{$shadow-l};
+    --shadow-xl: #{$shadow-xl};
+
+    /* App Settings */
+    --color-background-body: #{$color-background-body};
+    --header-size: #{$header-size};
+    --side-menu-size: #{$side-menu-size};
+
+}

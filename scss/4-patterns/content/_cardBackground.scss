@@ -1,0 +1,70 @@
+/* $4.1.7 - Patterns - Content - CardBackground */
+
+.card-background {
+  align-items: center;
+  border-radius: var(--border-radius-soft);
+  color: var(--color-neutral-0);
+  display: flex;
+  overflow: hidden;
+  padding: var(--space-m);
+  position: relative;
+
+  &-content{
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    &.top-left,
+    &.center-left,
+    &.bottom-left{
+      text-align: left;
+    }
+
+    &.top-center,
+    &.center,
+    &.bottom-center {
+      text-align: center;
+    }
+
+    &.top-right,
+    &.center-right,
+    &.bottom-right {
+      text-align: right;
+    }
+  }
+
+  &-image,
+  &-color{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &-color{
+    opacity: .6;
+
+    &:after {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &-image{
+    img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+    }
+  }
+}

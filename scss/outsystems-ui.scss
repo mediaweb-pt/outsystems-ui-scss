@@ -1,0 +1,190 @@
+/* ===================================================================== */
+/* ===================================================================== */
+
+/*  OutSystems UI                                                        */
+/*  For more information, visit www.outsystems.com/outsystems-ui         */
+
+/*  $0 - Root - CSS Variables                                            */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/*  $2 - HTML Elements                                                   */
+/*       $2.1 - HTML Elements - Links                                    */
+/*       $2.2 - HTML Elements - Images                                   */
+/*       $2.3 - HTML Elements - Headings                                 */
+/*       $2.4 - HTML Elements - Inputs and Selectors                     */
+/*       $2.5 - HTML Elements - Buttons                                  */
+/*  $3 - Page Layout                                                     */
+/*       $3.1 - Page Layout - Header                                     */
+/*              $3.1.1 - Page Layout - Header Top                        */
+/*              $3.1.2 - Page Layout - Header Content                    */
+/*       $3.2 - Page Layout - Menu                                       */
+/*       $3.3 - Page Layout - Content                                    */
+/*       $3.4 - Page Layout - Login                                      */
+/*  $4 - Patterns                                                        */
+/*       $4.1 - Patterns - Adaptive                                      */
+/*              $4.1.1   - Patterns - Adaptive - Columns                 */
+/*              $4.1.2   - Patterns - Adaptive - Gallery                 */
+/*              $4.1.3   - Patterns - Adaptive - MasterDetail            */
+/*       $4.2 - Patterns - Content                                       */
+/*              $4.2.1   - Patterns - Content - Accordion                */
+/*              $4.2.2   - Patterns - Content - Alert                    */
+/*              $4.2.3   - Patterns - Content - BlankSlate               */
+/*              $4.2.4   - Patterns - Content - Card                     */
+/*              $4.2.5   - Patterns - Content - CardBackground           */
+/*              $4.2.6   - Patterns - Content - CardItem                 */
+/*              $4.2.7   - Patterns - Content - CardSectioned            */
+/*              $4.2.8   - Patterns - Content - ChatMessage              */
+/*              $4.2.9   - Patterns - Content - FlipContent              */
+/*              $4.2.10  - Patterns - Content - FloatingContent          */
+/*              $4.2.11  - Patterns - Content - ListItemContent          */
+/*              $4.2.12  - Patterns - Content - Section                  */
+/*              $4.2.13  - Patterns - Content - Tag                      */
+/*              $4.2.14  - Patterns - Content - Tooltip                  */
+/*              $4.2.15  - Patterns - Content - UserAvatar               */
+/*       $4.3 - Patterns - Interaction                                   */
+/*              $4.3.1   - Patterns - Interaction - ActionSheet          */
+/*              $4.3.2   - Patterns - Interaction - Animate              */
+/*              $4.3.3   - Patterns - Interaction - AnimatedLabel        */
+/*              $4.3.4   - Patterns - Interaction - Carousel             */
+/*              $4.3.5   - Patterns - Interaction - DatePicker           */
+/*              $4.3.6   - Patterns - Interaction - DropdownSearch       */
+/*              $4.3.7   - Patterns - Interaction - DropdownTags         */
+/*              $4.3.8   - Patterns - Interaction - FloatingActions      */
+/*              $4.3.9   - Patterns - Interaction - HorizontalScroll     */
+/*              $4.3.10  - Patterns - Interaction - LightBoxImage        */
+/*              $4.3.11  - Patterns - Interaction - Notification         */
+/*              $4.3.12  - Patterns - Interaction - RangeSlider          */
+/*              $4.3.13  - Patterns - Interaction - Search               */
+/*              $4.3.14  - Patterns - Interaction - Sidebar              */
+/*              $4.3.15  - Patterns - Interaction - StackedCards         */
+/*              $4.3.16  - Patterns - Interaction - Video                */
+/*       $4.4 - Patterns - Navigation                                    */
+/*              $4.4.1   - Patterns - Navigation - BottomBarItem         */
+/*              $4.4.1   - Patterns - Navigation - Breadcrumbs           */
+/*              $4.4.5   - Patterns - Navigation - Pagination            */
+/*              $4.4.3   - Patterns - Navigation - SectionIndex          */
+/*              $4.4.5   - Patterns - Navigation - Tabs                  */
+/*              $4.4.6   - Patterns - Navigation - Timeline              */
+/*              $4.4.7   - Patterns - Navigation - Wizard                */
+/*       $4.5 - Patterns - Numbers                                       */
+/*              $4.5.1   - Patterns - Numbers - Badge                    */
+/*              $4.5.2   - Patterns - Numbers - Counter                  */
+/*              $4.5.3   - Patterns - Numbers - IconBadge                */
+/*              $4.5.4   - Patterns - Numbers - ProgressBar              */
+/*              $4.5.5   - Patterns - Numbers - ProgressCircle           */
+/*              $4.5.6   - Patterns - Numbers - ProgressCircleFraction   */
+/*       $4.6 - Patterns - Utilities                                     */
+/*              $4.6.1   - Patterns - Utilities - AlignCenter            */
+/*              $4.6.2   - Patterns - Utilities - ButtonLoading          */
+/*              $4.6.3   - Patterns - Utilities - CenterContent          */
+/*              $4.6.4   - Patterns - Utilities - MarginContainer        */
+/*              $4.6.5   - Patterns - Utilities - Separator              */
+/*  $5 - Widgets                                                         */
+/*       $5.1  - Widgets - List                                          */
+/*       $5.2  - Widgets - ListItem                                      */
+/*       $5.3  - Widgets - Table                                         */
+/*       $5.4  - Widgets - BulkActions                                   */
+/*       $5.5  - Widgets - Form                                          */
+/*       $5.6  - Widgets - Upload                                        */
+/*       $5.7  - Widgets - ButtonGroup                                   */
+/*       $5.8  - Widgets - Popover                                       */
+/*       $5.9  - Widgets - Popup                                         */
+/*       $5.10 - Widgets - FeedbackMessage                               */
+/*  $6 - Styles                                                          */
+/*       $6.1 - Styles - Typography                                      */
+/*              $6.1.1 - Styles - Typography - Sizes Desktop             */
+/*              $6.1.2 - Styles - Typography - Sizes Tablet              */
+/*              $6.1.3 - Styles - Typography - Sizes Phone               */
+/*              $6.1.4 - Styles - Typography - Transform                 */
+/*              $6.1.5 - Styles - Typography - Weight                    */
+/*       $6.2 - Styles - Colors                                          */
+/*              $6.2.1 - Styles - Colors - Brand                         */
+/*              $6.2.2 - Styles - Colors - Extendend                     */
+/*              $6.2.3 - Styles - Colors - Neutral                       */
+/*              $6.2.4 - Styles - Colors - Semantic                      */
+/*       $6.3 - Styles - Space                                           */
+/*              $6.3.1  - Styles - Space - Padding                       */
+/*              $6.3.2  - Styles - Space - Padding Top                   */
+/*              $6.3.3  - Styles - Space - Padding Right                 */
+/*              $6.3.4  - Styles - Space - Padding Bottom                */
+/*              $6.3.5  - Styles - Space - Padding Left                  */
+/*              $6.3.6  - Styles - Space - Padding Vertical              */
+/*              $6.3.7  - Styles - Space - Padding Horizontal            */
+/*              $6.3.8  - Styles - Space - Margin                        */
+/*              $6.3.9  - Styles - Space - Margin Top                    */
+/*              $6.3.10 - Styles - Space - Margin Right                  */
+/*              $6.3.11 - Styles - Space - Margin Bottom                 */
+/*              $6.3.12 - Styles - Space - Margin Left                   */
+/*              $6.3.13 - Styles - Space - Margin Vertical               */
+/*              $6.3.14 - Styles - Space - Margin Horizontal             */
+/*       $6.4 - Styles - Border Radius                                   */
+/*       $6.5 - Styles - Border Size                                     */
+/*       $6.6 - Styles - Elevation/Shadows                               */
+/*       $6.7 - Styles - Display Flex Properties                         */
+/*       $6.8 - Styles - Others                                          */
+/*  $7 - Screen Transitions                                              */
+/* ===================================================================== */
+/* ===================================================================== */
+
+@import "1-abstract/functions";
+@import "1-abstract/mixins";
+@import "1-abstract/variables";
+@import "1-abstract/root";
+@import "2-base/resets";
+@import "2-base/html_elements";
+@import "3-layout/page_layout";
+@import "4-patterns/adaptive/_main_adaptive_imports";
+@import "4-patterns/content/_main_content_imports";
+@import "4-patterns/interaction/_main_interaction_imports";
+@import "4-patterns/navigation/_main_navigation_imports";
+@import "4-patterns/numbers/_main_numbers_imports";
+@import "4-patterns/utilities/_main_utilities_imports";
+@import "5-widgets/main_widgets.scss";
+@import "2-base/typography";
+@import "2-base/colors";
+@import "2-base/space";
+@import "2-base/other_styles";
+@import "7-screen_transitions/screen_transitions";
+
+
+/* The CSS classes below will be excluded in the Style Classes dropwdown of Widgets */
+/* ExcludeFromPickers: accordion, accordion-item, accordion-item-content, accordion-item-header, accordion-item-icon, accordion-item-title, active, alert, alert-close, alert-icon, alert-message, align-items-center, animate, 
+animated-label, animated-label-inline, animated-label-input, animated-label-text, Application_Menu, app-logo, badge, badge-icon, badge-medium, badge-small, balloon, balloon-container, balloon-content, balloon-footer, balloon-title, 
+blank-slate, blank-slate-content, bottom-center, bottom-left, bottom-right, breadcrumbs, breadcrumbs-item, Button, button-group, card-background, card-background-color, card-background-content, card-background-image, card-content, 
+card-footer, card-image, card-sectioned, card-sectioned-right, card-sectioned-top, card-title, carousel, carousel-arrow-left, carousel-arrow-right, carousel-navigation, carousel-padding-none, center, center-align, 
+center-left, center-right, chat, chat-message, chat-message-actions, chat-message-content, chat-message-name, chat-photo, checkbox, choices, choices__button, choices__heading, choices__inner, choices__input, 
+choices__input--cloned, choices__item, choices__item--disabled, choices__item--selectable, choices__list, choices__list--dropdown, choices__list--multiple, choices__list--single, choices__placeholder, ColumnHeader, 
+columns, columns2, columns3, columns4, columns5, columns6, columns-item, columns-medium-left, columns-medium-right, columns-small-left, columns-small-right, content, content-bottom, content-breadcrumbs, content-middle, content-top, 
+content-top-actions, content-top-title, ControlActions, controls, counter, Counter_Message, customize-tools, desktop, desktop-big, desktop-hd, desktop-small, dropdown, dropdown-container, dropdown-content, dropdown-content-list, 
+dropdown-header, dropdown-icon, EditableTable, EditRecord, enter-bottom, enter-fade, enter-left, enter-right, enter-scale, enter-top, expandable-row, fa, fa-fw, fail, Feedback_AjaxWait, Feedback_AjaxWait_CursorProgress, 
+Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning, Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, file-upload, file-upload-button, file-upload-delete, 
+file-upload-icon, file-upload-message, file-upload-widget, Form, gallery-content, gallery-item, has-event, header, header-center, header-content, header-left, header-right, header-top, hide-on-service-studio, icon, 
+icon-silk-angle-down, icon-silk-chevron-down, icon-silk-rocket, icon-silk-search, ie10, ie11, img, img-1, img-2, img-3, img-4, img-5, img-6, img-7, img-8, InEditMode, input, input-with-icon, input-with-icon-content-icon, 
+input-with-icon-input, interval, Is_Default, is-active, is--active, is--animating, is-bound, is--closed, is--collapsed, is-disabled, is--disabled, is--expanded, is-flipped, is-focused, is-hidden, is--hidden, 
+is-highlighted, is-inline, is-open, is--open, is-outside-current-month, is-right, is-rtl, is-selected, is-today, is--visible, jello, justified, justify-content-flex-end, label-top, layout, layout-left, layout-login, 
+layout-login-background, layout-login-form, layout-login-form-content, layout-login-simple, layout-side, layout-top, lazyload, leave-bottom, leave-fade, leave-left, leave-right, leave-scale, leave-top, left, lightbox, 
+lightbox-content-thumbnail, light-theme, ListNavigation_CurrentPageNumber, ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber, 
+ListNavigation_Previous, ListNavigation_Wrapper, list-navigation-circle, list-navigation-inline, list-navigation-sharp, ListRecords, loaded, logo-preview, lt-ie9, main, main-content, MandatoryLabel, 
+Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menu-icon, menu-icon-line, modal, modal-close, modal-content, 
+modal-footer, modal-overlay, modal-title, modal-top, modal-wrapper, month-picker, nav, navigation, navigation-bar, navigation-bar-item, navigation-bar-item-content, navigation-bar-item-subitem, navigation-bar-item-title, 
+navigation-bottom, navigation-menu, navigation-top, nav-toggle-handle, next, next-year, Not_Valid, noUi-active, noUi-connect, noUi-connects, noUi-handle, noUi-horizontal, noUi-marker, noUi-marker-horizontal, noUi-pips, 
+noUi-pips-horizontal, noUi-pips-vertical, noUi-target, noUi-value-horizontal, noUi-value-vertical, noUi-vertical, OnEdit, only-balloon, open, os-internal-header-space, os-internal-Popup, os-internal-PopupCallOut, 
+os-internal-ui-autocomplete, os-internal-ui-dialog, os-internal-ui-dialog-buttonpane, os-internal-ui-dialog-content, os-internal-ui-dialog-title, os-internal-ui-dialog-titlebar, os-internal-ui-dialog-titlebar-close, 
+os-internal-ui-dialog-titlebar-close-hover, os-internal-ui-dialog-titlebar-close-no-title, os-internal-ui-draggable, os-internal-ui-resizable-e, os-internal-ui-resizable-n, os-internal-ui-resizable-ne, os-internal-ui-resizable-nw, 
+os-internal-ui-resizable-s, os-internal-ui-resizable-se, os-internal-ui-resizable-sw, os-internal-ui-resizable-w, os-internal-ui-state-hover, os-internal-ui-widget-overlay, OUTSYSTEMS_INTERNAL_BLOCK_INSTANCE, panel, panel-actions, 
+panel-content, panel-footer, panel-header, panel-title, past, ph, phone, phone-break-all, phone-break-first, phone-break-last, phone-break-middle, pika-button, pika-days-picker, pika-go-today, pika-label, pika-labels, 
+pika-month, pika-next, pika-prev, pika-select-month, pika-select-year, pika-single, pika-table, pika-title, pika-today-container, pika-year, playbutton-wrapper, portrait, prev, prev-year, progress, progress-bar-base, 
+progress-bar-extra-small, progress-bar-small, progress-container, progress-content, progress-title, progress-value, pswp, pswp__bg, pswp__button, pswp__button--arrow--left, pswp__button--arrow--right, pswp__button--close, 
+pswp__button--fs, pswp__button--share, pswp__button--zoom, pswp__caption, pswp__caption__center, pswp__caption--empty, pswp__caption--fake, pswp__container, pswp__counter, pswp__element--disabled, pswp__error-msg, pswp__img, 
+pswp__img--placeholder, pswp__img--placeholder--blank, pswp__item, pswp__preloader, pswp__preloader__cut, pswp__preloader__donut, pswp__preloader__icn, pswp__preloader--active, pswp__scroll-wrap, pswp__share--download, 
+pswp__share--facebook, pswp__share-modal, pswp__share-modal--fade-in, pswp__share-modal--hidden, pswp__share--pinterest, pswp__share-tooltip, pswp__share--twitter, pswp__top-bar, pswp__ui, pswp__ui--fit, 
+pswp__ui--hidden, pswp__ui--idle, pswp__ui--one-slide, pswp__ui--over-close, pswp__zoom-wrap, pswp--animate_opacity, pswp--animated-in, pswp--css_animation, pswp--dragging, pswp--fs, pswp--has_mouse, pswp--ie, pswp--minimal--dark, 
+pswp--open, pswp--supports-fs, pswp--touch, pswp--zoom-allowed, pswp--zoomed-in, radio-button, range-slider, range-slider-label, range-slider-object, range-slider-separator, range-slider-values, ReadOnly, right, rollOut, 
+RowControlGroup, scrollable-row, search, search-actions, search-balloon, search-balloon-answers, search--wrapper, section-actions, section-content, section-header, select, Selected, separator, separator-horizontal, 
+separator-vertical, sidebar, sidebar-container, sidebar-content, sidebar-header, sidebar-overlay, SmartInput_Changed, SortColumns_Sortable, SortColumns_Sorted, subtitle, suite-container, table-no-header, TableRecords, 
+TableRecords_BottomNavigation, TableRecords_EvenLine, TableRecords_ExpandedRow, TableRecords_Header, TableRecords_Label, TableRecords_OddLine, table-records-medium, table-records-small, table-records-stripping, 
+tablet, tablet-break-all, tablet-break-first, tablet-break-last, tablet-break-middle, tabs, tabs-content, tabs-content-item, tabs-header, tabs-header-item, tabs-header-right, tabs-vertical, tag, tag-medium, tag-small, 
+textarea, ThemeGrid_Container, ThemeGrid_MarginGutter, thumbnails, timeline-item, timeline-item-date, timeline-item-icon, timeline-item-left, timeline-item-right, timeline-item-separator, tippy-arrow, tippy-backdrop, 
+tippy-iOS, tippy-notransition, tippy-popper, tippy-roundarrow, tippy-tooltip, title, Title_Links, tns-ah, tns-controls, tns-fadeIn, tns-fadeOut, tns-gallery, tns-horizontal, tns-item, tns-lazy-img, tns-moving, tns-nav, 
+tns-no-calc, tns-normal, tns-no-subpixel, tns-outer, tns-ovh, tns-slide-active, tns-slider, tns-subpixel, tns-transparent, tns-visually-hidden, toggle-button, toggle-button-label, tooltip, tooltip-bottom, tooltip-container, 
+tooltip-left, tooltip-right, tooltip-top, tooltip-widget, top-center, top-left, top-right, user-avatar, ValidationMessage, vertical, visually-hidden, wizard, wizard-item, wizard-item-icon, wizard-item-icon-wraper, wizard-item-label,
+wizard-vertical, wrapper, year-picker, Heading2 */

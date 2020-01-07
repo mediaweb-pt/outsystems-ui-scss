@@ -1,0 +1,27 @@
+{
+  "name": "rocket_design_sys",
+  "version": "1.0.0",
+  "description": "Mediaweb creation design system ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mediaweb.ddns.net:8000/mediaweb/rocket-design-sys"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-cli": "^6.1.3"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2"
+  },
+  "author": "Mediaweb Creations Lda",
+  "license": "MIT"
+}

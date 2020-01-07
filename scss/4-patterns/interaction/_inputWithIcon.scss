@@ -1,0 +1,54 @@
+/* $4.3.10 - Patterns - Controls - InputWithIcon */
+.input-with-icon {
+  display: flex;
+  position: relative;
+
+  .input-with-icon-content-icon {
+    display: inline-flex;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    width: 40px;
+
+    &,
+    a {
+      color: var(--color-neutral-6);
+    }
+
+    &:not(:empty) + .input-with-icon-input input {
+      padding-left: var(--space-xl);
+    }
+
+    &.search-actions {
+      left: auto;
+      right: 0;
+
+      &:hover {
+        color: var(--color-neutral-8);
+        cursor: pointer;
+      }
+    }
+  }
+  
+  &.input-with-icon-right .input-with-icon-content-icon {
+    left: auto;
+    right: 0;
+
+    &:not(:empty) + .input-with-icon-input input {
+      padding-right: var(--space-xl);
+      padding-left: var(--space-base);
+    }
+
+    &.search-actions {
+      left: 0;
+      right: auto;
+    }
+  }
+  
+  .input-with-icon-input,
+  .input-with-icon-input input {
+    width: 100%;
+  }
+  
+  .fa-fw { width: auto; }
+}

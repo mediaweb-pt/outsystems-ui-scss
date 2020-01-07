@@ -1,0 +1,32 @@
+/* $4.5.5 - Patterns - Numbers - ProgressCircle */
+.progress-circle-outer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: var(--space-base);
+}
+
+.progress-circle {
+  position: relative;
+
+  svg {
+    height: 100%;
+    stroke-linecap: round;
+  }
+
+  .progressbar-text {
+    text-align: center;
+  }
+}
+
+.progress-circle-small .progressbar-text {
+  font-size: var(--font-size-h4);
+}
+
+.progress-circle-medium .progressbar-text {
+  font-size: 26px;
+}
+
+.progress-circle-large .progressbar-text {
+  font-size: 36px;
+}

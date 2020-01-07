@@ -1,0 +1,27 @@
+/* $5.5 - Widgets - Form */
+label {
+  color: var(--color-neutral-8);
+}
+
+.form{
+  label {
+    margin-bottom: var(--space-s);
+  }
+
+  .dropdown,
+  input[data-input],
+  [data-switch] {
+    margin-bottom: var(--space-m);
+  }
+}
+
+[data-label].mandatory:after {
+  color: var(--color-error);
+  margin-left: var(--space-xs);
+}
+
+span.validation-message {
+  color: var(--color-error);
+  font-size: var(--font-size-xs);
+  margin-left: var(--space-none);
+}

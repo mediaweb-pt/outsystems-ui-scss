@@ -1,0 +1,31 @@
+/* $4.5.3 - Patterns - Numbers - IconBadge */
+.icon-badge {
+  display: inline-block;
+  position: relative;
+
+  .icon {
+    font-size: var(--font-size-h4);
+  }
+  
+  .badge {
+    border-radius: var(--border-radius-rounded);
+    font-size: var(--font-size-xs);
+    height: 18px;
+    left: 45%;
+    min-width: 18px;
+    padding: var(--space-none) var(--space-xs);
+    position: absolute;
+    top: 0;
+    transform: translateY(-40%);
+    white-space: nowrap;
+
+    [data-expression] {
+      white-space: nowrap;
+    }
+  }
+  
+  div:first-child:empty {
+    -servicestudio-height: 30px;
+    -servicestudio-width: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+/* $4.5.1 - Patterns - Numbers - Badge */
+.badge {
+  align-items: center;
+  color: var(--color-neutral-0);
+  display: inline-flex;
+  font-weight: var(--font-semi-bold);
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 32px;
+
+  span {
+    width: auto;
+  }
+
+  &.background-neutral-1,
+  &.background-neutral-2,
+  &.background-neutral-3,
+  &.background-neutral-4 {
+    color: var(--color-neutral-9);
+  }
+
+  &.background-transparent {
+    color: var(--color-primary);
+  }
+
+  &.background-neutral-0 {
+    color: var(--color-primary);
+  }
+}
+
+.badge-small {
+  font-size: var(--font-size-xs);
+  height: 24px;
+  min-width: 24px;
+  padding: var(--space-none) var(--space-xs);
+}
+
+.badge-medium {
+  font-size: var(--font-size-base);
+  height: 40px;
+  min-width: 40px;
+}

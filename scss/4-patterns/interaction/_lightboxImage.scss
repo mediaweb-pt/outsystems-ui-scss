@@ -1,0 +1,42 @@
+/* $4.3.11 - Patterns - Interaction - LightboxImage */
+.lightbox-content-thumbnail {
+  -servicestudio-min-height: 100px;
+}
+
+/* DEPRECATED Lightbox item */
+.hide-lightbox-image .lightbox-image { display: none; }
+
+.lightbox-item { -servicestudio-position: relative; }
+
+.lightbox-image:empty { -servicestudio-min-height: 200px; }
+
+.lightbox-image:after {
+  -servicestudio-background-color: rgba(0,0,0,.3);
+  -servicestudio-color: #fff;
+  -servicestudio-content: "Image";
+  -servicestudio-font-size: 9px;
+  -servicestudio-left: 0;
+  -servicestudio-padding: 3px;
+  -servicestudio-position: absolute;
+  -servicestudio-right: 0;
+}
+
+.lightbox-thumbnail:empty { -servicestudio-min-height: 40%; }
+
+.lightbox-thumbnail {
+  -servicestudio-bottom: 0;
+  -servicestudio-position: absolute;
+  -servicestudio-right: 0;
+  -servicestudio-width: 100%;
+}
+
+.lightbox-thumbnail:after {
+  -servicestudio-background-color: rgba(0,0,0,.3);
+  -servicestudio-color: #fff;
+  -servicestudio-content: "Thumbnail";
+  -servicestudio-font-size: 9px;
+  -servicestudio-left: 0;
+  -servicestudio-padding: 3px;
+  -servicestudio-position: absolute;
+  -servicestudio-right: 0;
+}

@@ -1,0 +1,109 @@
+/* $4.3.1 - Patterns - Interaction - ActionSheet */
+.action-sheet-container {
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 155;
+	-servicestudio-margin-top: -20px;
+
+	&--visible {
+		pointer-events: auto;
+		
+		.action-sheet { transform: none; }
+
+		&.action-sheet-container:after { opacity: 1; }
+
+		&.action-sheet-container--animatable .action-sheet { transition: all 330ms ease-out; }
+	}
+
+	&:after {
+		background-color: rgba(0, 0, 0, .25);
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
+		width: 100%;
+		will-change: opacity;
+		-servicestudio-opacity: 1;
+  }
+  
+	&--animatable .action-sheet { transition: all 130ms ease-in; }
+}
+
+
+.action-sheet {
+  bottom: 0;
+  left: 0;
+  margin-top: 0;
+  padding: var(--space-base);
+  pointer-events: auto;
+  position: absolute;
+  transform: translateY(100%);
+  width: 100%;
+  will-change: transform;
+  z-index: 60;
+  -servicestudio--webkit-transform: translateY(0);
+  -servicestudio-transform: translateY(0);
+}
+
+.action-sheet-buttons {
+  border-radius: var(--border-radius-soft);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.action-sheet-actions {
+	-servicestudio-min-height: 40px;
+
+	.btn {
+		border-radius: 0;
+		width: 100%;
+		border: none;
+  	margin-top: 1px;
+	}
+	
+	&:first-child .btn { margin-top: 0; }
+}
+
+.action-sheet-cancel .btn {
+  color: var(--color-neutral-8);
+  border: none;
+}
+
+.desktop{
+	.action-sheet-buttons,
+	.action-sheet-cancel {
+		max-width: 500px;
+	}
+}
+
+.tablet{
+	.action-sheet-buttons,
+	.action-sheet-cancel {
+		max-width: 600px;
+	}
+
+}
+
+.desktop,
+.tablet{
+  .action-sheet-buttons,
+	.action-sheet-cancel {
+    margin: var(--space-none) auto;
+  }
+
+	.action-sheet-cancel {
+		margin: var(--space-base) auto var(--space-none);
+	}
+}

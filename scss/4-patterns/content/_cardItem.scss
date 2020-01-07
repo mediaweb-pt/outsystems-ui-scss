@@ -1,0 +1,30 @@
+/* $4.2.6 - Patterns - Content - CardItem * New * */
+.card-detail {
+  align-items: center;
+  display: flex;
+
+  &-center{
+    flex: 1;
+  }
+
+  &-left{
+    max-width: 120px;
+    padding-right: var(--space-base);
+  }
+
+  &-right{
+    padding-left: var(--space-base);
+  }
+
+  &-text{
+    color: var(--color-neutral-7);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-title{
+    color: var(--color-neutral-10);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-semi-bold);
+  }
+}

@@ -1,0 +1,138 @@
+/* ================================================================ */
+/*  $6.2 - Styles - Colors                                          */
+/* ================================================================ */
+
+
+/* $6.2.1 - Styles - Colors - Brand & $6.2.2 - Styles - Colors - Extendend */
+
+@each $color in $colors{
+  .background-#{$color} {
+    background-color: var(--color-#{$color});
+
+    &-lightest{
+      background-color: var(--color-#{$color}-lightest);
+    }
+    
+    &-lighter{
+      background-color: var(--color-#{$color}-lighter);
+    }
+
+    &-light{
+      background-color: var(--color-#{$color}-light);
+    }
+
+    &-dark{
+      background-color: var(--color-#{$color}-dark);
+    }
+
+    &-darker{
+      background-color: var(--color-#{$color}-darker);
+    }
+
+    &-darkest{
+      background-color: var(--color-#{$color}-darkest);
+    }
+  }
+
+  .text-#{$color}{
+    color: var(--color-#{$color});
+
+    &-lightest{
+      color: var(--color-#{$color}-lightest);
+    }
+    
+    &-lighter{
+      color: var(--color-#{$color}-lighter);
+    }
+
+    &-light{
+      color: var(--color-#{$color}-light);
+    }
+
+    &-dark{
+      color: var(--color-#{$color}-dark);
+    }
+
+    &-darker{
+      color: var(--color-#{$color}-darker);
+    }
+
+    &-darkest{
+      color: var(--color-#{$color}-darkest);
+    }
+  }
+}
+
+/* $6.2.3 - Styles - Colors - Neutral */
+
+@for $i from 0 through 10{
+  .background{
+    &-neutral-#{$i}{
+      background-color: var(--color-neutral-#{$i});
+    }
+  }
+  
+  .text{
+    &-neutral-#{$i}{
+      color: var(--color-neutral-#{$i});
+    }
+  }
+}
+
+/* Background and Text Colors used when IsLight parameter for Badge / Tag / UserInitials is True */
+.background-neutral-0,
+.background-neutral-1,
+.background-neutral-2,
+.background-neutral-3,
+.background-neutral-4{
+  &-lightest {
+    background-color: var(--color-neutral-9);  
+  }
+}
+
+.background-neutral-5,
+.background-neutral-6,
+.background-neutral-7,
+.background-neutral-8,
+.background-neutral-9,
+.background-neutral-10{
+  &-lightest {
+    background-color: var(--color-neutral-0);
+  }
+}
+
+.text-neutral-5-darker { color: var(--color-neutral-5); }
+.text-neutral-6-darker { color: var(--color-neutral-6); }
+.text-neutral-7-darker { color: var(--color-neutral-7); }
+.text-neutral-8-darker { color: var(--color-neutral-8); }
+.text-neutral-9-darker { color: var(--color-neutral-9); }
+.text-neutral-10-darker { color: var(--color-neutral-10); }
+
+/* Background Transparent when used in IE11 to be more specific than CSSVars Polyfill */
+.ie11 .background-transparent { background-color: transparent; }
+
+
+/* $6.2.4 - Styles - Colors - Semantic */
+.background-error-light { background-color: var(--color-error-light); }
+.background-error { background-color: var(--color-error); }
+
+.text-error-light { color: var(--color-error-light); }
+.text-error { color: var(--color-error); }
+
+.background-warning-light { background-color: var(--color-warning-light); }
+.background-warning { background-color: var(--color-warning); }
+
+.text-warning-light { color: var(--color-warning-light); }
+.text-warning { color: var(--color-warning); }
+
+.background-success-light { background-color: var(--color-success-light); }
+.background-success { background-color: var(--color-success); }
+
+.text-success-light { color: var(--color-success-light); }
+.text-success { color: var(--color-success); }
+
+.background-info-light { background-color: var(--color-info-light); }
+.background-info { background-color: var(--color-info); }
+
+.text-info-light { color: var(--color-info-light); }
+.text-info { color: var(--color-info); }

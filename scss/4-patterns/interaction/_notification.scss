@@ -1,0 +1,32 @@
+/* $4.3.12 - Patterns - Interaction - Notification */
+.notification {
+  background-color: var(--color-neutral-0);
+  border: var(--border-size-s) solid var(--color-neutral-4);
+  border-radius: var(--border-radius-soft);
+  box-shadow: var(--shadow-xl);
+  color: var(--color-neutral-10);
+  left: 50%;
+  padding: var(--space-m);
+  position: fixed;
+  top: 0;
+  transform: translateY(-120%) translateX(-50%);
+  user-select: none;
+  width: 370px;
+  z-index: 300;
+  -servicestudio-position: static;
+  -servicestudio--webkit-transform: translateY(0);
+  -servicestudio-transform: translateY(0);
+}
+
+.notification-content {
+  align-items: center;
+  display: flex;
+}
+
+.notification--visible {
+  transform: translateY(24px) translateX(-50%);
+
+  &.notification--animatable { transition: all 330ms ease-out; }
+}
+
+.notification--animatable { transition: all 130ms ease-in; }

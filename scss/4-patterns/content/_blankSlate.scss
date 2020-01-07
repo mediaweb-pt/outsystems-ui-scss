@@ -1,0 +1,36 @@
+/* $4.2.3 - Patterns - Content - BlankSlate */
+.blank-slate {
+  display: flex;
+  position: relative;
+
+  &-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  &-description {
+    color: var(--color-neutral-9);
+    padding: var(--space-none) var(--space-base);
+  }
+  
+  &.large {
+    height: 100%;
+  }
+  
+  .large &-icon {
+    font-size: 120px;
+  }
+  
+  &-actions {
+    padding: var(--space-base);
+  }
+  
+  .large &-actions {
+    padding: var(--space-xxl) var(--space-base);
+  }
+  
+  &-icon {
+    color: var(--color-neutral-6);
+    font-size: 70px;
+  }
+}

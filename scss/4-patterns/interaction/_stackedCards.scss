@@ -1,0 +1,140 @@
+/* $4.3.16 - Patterns - Interaction - StackedCards */
+
+.stackedcards-overflow { overflow-y: hidden !important; }
+
+.stackedcards {
+  position: relative;
+
+  &.init {
+    opacity: 0;
+    -servicestudio-opacity: 1;
+  }
+
+  .stackedcards-container .OSAutoMarginTop { margin-top: var(--space-none); }
+
+  .stackedcards-container .list.list-group {
+    background-color: transparent;
+    height: 100%;
+    z-index: 6;
+  }
+
+  * { user-select: none; }
+
+  > span {
+    -servicestudio-display: block !important;
+  }
+
+  .stackedcards-container{
+    > :nth-child(1),
+    .list.list-group > :nth-child(1) {
+      display: block;
+      position: relative;
+    }
+
+    > .list:not([data-virtualization-disabled]),
+    > .list:not([data-animation-disabled]) {
+      -servicestudio-pointer-events: none;
+      -servicestudio-min-height: 225px;
+
+      > * { -servicestudio-display: none !important; }
+
+      &:after {
+        -servicestudio-content: " ";
+        -servicestudio-position: absolute;
+        -servicestudio-top: 0;
+        -servicestudio-left: 0;
+        -servicestudio-width: 100%;
+        -servicestudio-height: 100%;
+        -servicestudio-min-height: 225px;
+        -servicestudio-background-color: #fff;
+        -servicestudio-background-position: center;
+        -servicestudio-background-size: 291px 225px;
+        -servicestudio-background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.stackedcards--animatable { transition: all 400ms ease; }
+
+.stackedcards-container,
+.stackedcards-container .list.list-group > * {
+  -servicestudio-min-height: 80px;
+}
+
+.stackedcards-container .list.list-group > *,
+.stackedcards .stackedcards-container > *,
+.stackedcards-overlay {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: transform, opacity;
+  -servicestudio-position: relative;
+}
+
+.stackedcards-overlay{
+  &.left,
+  &.right,
+  &.top {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    color: #fff;
+    -servicestudio-width: 100%;
+    -servicestudio-left: inherit;
+    -servicestudio-opacity: .7;
+
+    > div {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &.top {
+    background-color: #2980b9;
+    -servicestudio-background-color: #2980b9;
+    -servicestudio-min-height: 80px;
+    -servicestudio-width: 100%;
+    -servicestudio-float: none;
+    -servicestudio-z-index: 7;
+  }
+
+  &.right {
+    background-color: #27ae60;
+    -servicestudio-background-color: #27ae60;
+    -servicestudio-width: 50%;
+    -servicestudio-float: right;
+    -servicestudio-min-height: 80px;
+    -servicestudio-z-index: 8;
+  }
+  
+  &.left {
+    background-color: #c0392b;
+    -servicestudio-background-color: #c0392b;
+    -servicestudio-width: 50%;
+    -servicestudio-float: none;
+    -servicestudio-min-height: 80px;
+    -servicestudio-z-index: 8;
+  }
+}
+
+.stackedcards-overlay-hidden { display: none; }
+
+.stackedcards-origin-bottom { transform-origin: bottom; }
+
+.stackedcards-origin-top { transform-origin: top; }
+
+.stackedcards-bottom,
+.stackedcards-top,
+.stackedcards-none {
+  background-color: #fff;
+  height: 100%;
+}

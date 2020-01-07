@@ -1,0 +1,127 @@
+/* $4.2.10 - Patterns - Content - FloatingContent */
+.floating-content {
+  position: fixed;
+  width: auto;
+  z-index: 100;
+
+  > div:empty{
+    -servicestudio-min-height: 80px;
+    -servicestudio-min-width: 80px; 
+  }
+
+  &#{&} {
+    &-full-width{
+      left: 0;
+      right: 0;
+      width: auto;
+    }
+
+    &-full-height{
+      margin-top: 0;
+      top: calc(var(--header-size) + var(--space-base) * 2);
+    }
+  }
+
+  &-top{
+    left: 50%;
+    margin-top: 0;
+    top: calc(var(--header-size) + var(--space-base) * 2);
+    transform: translateX(-50%);
+
+    &-right{
+      margin-top: 0;
+      right: 0;
+      top: calc(var(--header-size) + var(--space-base) * 2);
+    }
+
+    &-left{
+      left: 0;
+      margin-top: 0;
+      top: calc(var(--header-size) + var(--space-base) * 2);
+    }
+  }
+
+  &-right{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-left{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-bottom{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-left{
+      bottom: 0;
+      left: 0;
+    }
+
+    &-right{
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &-center{
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.floating-content-left,
+.floating-content-right{
+  &.floating-content-full-height {
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+.floating-content-full-height{
+  &.floating-content-top-left,
+  &.floating-content-top,
+  &.floating-content-top-right,
+  &.floating-content-bottom-left,
+  &.floating-content-bottom,
+  &.floating-content-bottom-right{
+    bottom: 0;
+  }
+}
+
+.floating-content-center.floating-content-full-height {
+  bottom: 0;
+  transform: translateY(0) translateX(-50%);
+}
+
+.floating-content-full-width {
+
+  &.floating-content-top,
+  &.floating-content-bottom,
+  &.floating-content-center {
+    transform: translateX(0);
+  }
+
+  &.floating-content-margin { margin: var(--space-l); }
+
+  &.floating-content > .OSInline { display: inline; }
+
+  &.floating-content-top,
+  &.floating-content-bottom {
+    transform: translateX(0);
+  }
+
+  &.floating-content-center {
+    transform: translateX(0) translateY(-50%);
+
+    &.floating-content-full-height {
+      transform: translateX(0) translateY(0);
+    }
+  }
+}

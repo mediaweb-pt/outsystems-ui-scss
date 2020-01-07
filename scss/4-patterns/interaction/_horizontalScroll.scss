@@ -1,0 +1,27 @@
+/* $4.3.9 - Patterns - Interaction - HorizontalScroll */
+.horizontal-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  -servicestudio-min-height: 80px;
+  -servicestudio-white-space: normal;
+
+  > *,
+  > .list > * {
+    display: inline-block;
+    transform: translateZ(0);
+  }
+  
+  > :not(:first-child),
+  > .list > :not(:first-child) {
+    margin-left: var(--space-base);
+  }
+  
+  > [data-block*="Card"] + [data-block*="Card"] .card,
+  > .list > [data-block*="Card"] + [data-block*="Card"] .card {
+    margin-top: var(--space-none);
+  }
+  
+  .list {
+    background-color: transparent;
+  }
+}

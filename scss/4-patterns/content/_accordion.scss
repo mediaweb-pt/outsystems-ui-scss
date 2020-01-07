@@ -1,0 +1,92 @@
+/* $4.2.1 - Patterns - Content - Accordion */
+.section-expandable {
+  background-color: var(--color-neutral-0);
+  border: var(--border-size-s) solid var(--color-neutral-4);
+  border-bottom-width: var(--border-size-none);
+
+  &.is--open{
+    border-top: var(--border-size-m) solid var(--color-primary);
+    
+    .section-expandable{
+      &-title{
+        font-weight: var(--font-semi-bold);
+      }
+
+      &-icon{
+        transform: rotate(180deg);
+      }
+    }  
+  }
+
+  & &-title{
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    font-size: var(--font-size-h6);
+    padding: var(--space-m);
+    width: 100%;
+  }
+
+  & &-icon{
+    color: var(--color-primary);
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 300ms ease-in-out;
+
+    &:after{
+      content: "\f107";
+    }
+  }
+
+  &.is--disabled{
+    color: var(--color-neutral-7);
+    pointer-events: none;
+    -servicestudio-color: var(--color-neutral-9);
+    -servicestudio-pointer-events: auto;
+
+    .section-expandable{
+      &-icon{
+        color: var(--color-neutral-6);
+      }
+    }
+  }
+
+  & &-content{
+    display: block;
+    overflow: hidden;
+
+    &,&.is--collapsed{
+      height: 0;
+      padding: var(--space-none) var(--space-m);
+      visibility: hidden;
+      -servicestudio-height: auto;
+      -servicestudio-padding: var(--space-none) var(--space-m) var(--space-m);
+    }
+
+    &.is--expanded{
+      height: auto;
+      padding: var(--space-none) var(--space-m) var(--space-m);
+      visibility: visible;
+    }
+
+    &.is--animating{
+      transition: all 300ms ease-in-out;
+    }
+  }
+}
+
+[data-block*="AccordionItem"]{
+  &:first-child{
+    .section-expandable{
+      border-radius: var(--border-radius-soft) var(--border-radius-soft) var(--border-radius-none) var(--border-radius-none);
+    }
+  }
+
+  &:last-child{
+    .section-expandable{
+      border-bottom-width: var(--border-size-s);
+      border-radius: var(--border-radius-none) var(--border-radius-none) var(--border-radius-soft) var(--border-radius-soft);
+    }
+  }
+}

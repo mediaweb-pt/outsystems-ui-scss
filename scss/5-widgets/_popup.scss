@@ -1,0 +1,15 @@
+/* $5.9 - Widgets - Popup */
+.popup-backdrop {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.popup-dialog {
+  border: 0;
+  border-radius: var(--border-radius-soft);
+  box-shadow: var(--shadow-xl);
+  max-height: 100%;
+  max-width: 500px;
+  overflow: initial;
+  padding: var(--space-m);
+  width: 100%;
+}

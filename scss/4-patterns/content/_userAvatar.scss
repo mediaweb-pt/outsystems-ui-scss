@@ -1,0 +1,39 @@
+/* $4.2.15 - Patterns - Content - UserAvatar */
+.avatar {
+  align-items: center;
+  color: var(--color-neutral-0);
+  display: inline-flex;
+  font-weight: var(--font-semi-bold);
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 32px;
+
+  span {
+    width: auto;
+  }
+
+  &.background-neutral-1,
+  &.background-neutral-2,
+  &.background-neutral-3,
+  &.background-neutral-4 {
+    color: var(--color-neutral-9);
+  }
+
+  &.background-transparent { color: var(--color-primary); }
+
+  &.background-neutral-0 { color: var(--color-primary); }
+
+  &-small{
+    font-size: var(--font-size-xs);
+    height: 24px;
+    width: 24px;
+  }
+
+  &-medium{
+    font-size: var(--font-size-base);
+    height: 40px;
+    width: 40px;
+  }
+}

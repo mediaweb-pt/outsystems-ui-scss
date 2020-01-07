@@ -1,0 +1,20 @@
+/* $4.4.2 - Patterns - Navigation - Breadcrumbs */
+.breadcrumbs-content {
+  align-items: center;
+  display: flex;
+}
+
+.breadcrumbs-item {
+  align-items: center;
+  color: var(--color-neutral-8);
+  display: inline-flex;
+
+  .icon{
+    color: var(--color-neutral-6);
+    display: inline-flex;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+    margin: var(--space-none) var(--space-s);
+    width: auto;
+  }
+}

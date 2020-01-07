@@ -1,0 +1,38 @@
+/* $4.5.6 - Patterns - Numbers - ProgressCircleFraction */
+.progress-circle-text {
+  left: 50%;
+  line-height: 1.2;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -servicestudio-position: static;
+  -servicestudio--webkit-transform: translate(0);
+}
+
+.progress-circle-text-numerator {
+  font-size: 24px;
+}
+
+.progress-circle-text-denominator {
+  font-size: var(--font-size-h6);
+}
+
+.progress-circle-medium {
+  .progress-circle-text-numerator {
+    font-size: 32px;
+  }
+  
+  .progress-circle-text-denominator {
+    font-size: var(--font-size-h4);
+  }
+}
+
+.progress-circle-large{
+  .progress-circle-text-numerator {
+    font-size: 44px;
+  }
+  
+  .progress-circle-text-denominator {
+    font-size: var(--font-size-h2);
+  }
+}

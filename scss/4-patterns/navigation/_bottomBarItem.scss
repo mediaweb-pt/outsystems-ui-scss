@@ -1,0 +1,55 @@
+/* $4.4.1 - Patterns - Navigation - BottomBarItem */
+.bottom-bar-wrapper {
+  background-color: var(--color-neutral-0);
+  border-top: 1px solid var(--color-neutral-3);
+}
+
+.bottom-bar {
+  display: flex;
+
+  &:empty:after{
+    color: #999;
+    content: "Add Bottom Bar Items to this Container";
+    display: block;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  & > a,
+  & > div{
+    flex: 1;
+    max-width: 150px;
+    overflow: hidden;
+  }
+
+  & > a{
+    color: var(--color-neutral-8);
+
+    &.active{ color: var(--color-primary); }
+  }
+}
+
+.bottom-bar-item{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: var(--space-s);
+  position: relative;
+
+  &-icon{
+    display: inline-flex;
+    font-size: 18px;
+    height: auto;
+    justify-content: center;
+  }
+
+  &-text{
+    font-size: 10px;
+    margin-top: var(--space-xs);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+}

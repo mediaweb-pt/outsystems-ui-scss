@@ -1,0 +1,12 @@
+/* $4.3.17 - Patterns - Interaction - Video */
+.video-preview { display: block; }
+
+.video.hide-controls {
+  pointer-events: none;
+
+  &::-webkit-media-controls-panel,
+  &::-webkit-media-controls-panel-container {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+}

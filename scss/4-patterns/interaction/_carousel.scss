@@ -1,0 +1,156 @@
+/* $4.3.4 - Patterns - Interaction - Carousel */
+.carousel {
+  transition: all 400ms ease; 
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+  -servicestudio-min-height: 80px !important;
+
+  &:empty {
+    -servicestudio-min-height: 200px;
+  }
+  &.init {
+    opacity: 0;
+    -servicestudio-opacity: 1;
+  }
+
+  &--animatable {
+    transition: all 250ms linear;
+    will-change: transform;
+  }
+
+  > .list:not([data-virtualization-disabled]),
+  > .list:not([data-animation-disabled]){
+    -servicestudio-pointer-events: none;
+    -servicestudio-min-height: 225px;
+    > * {
+      -servicestudio-display: none !important;
+    }
+    &:after {
+      -servicestudio-content: " ";
+      -servicestudio-position: absolute;
+      -servicestudio-top: 0;
+      -servicestudio-left: 0;
+      -servicestudio-width: 100%;
+      -servicestudio-height: 100%;
+      -servicestudio-min-height: 225px;
+      -servicestudio-background-color: #fff;
+      -servicestudio-background-position: center;
+      -servicestudio-background-size: 291px 225px;
+      -servicestudio-background-repeat: no-repeat;
+    }
+  }
+
+  /* fix carousel margin top for card pattern inside carousel */
+  [data-block*="Card"] + [data-block*="Card"] .card {
+    margin-top: var(--space-none);
+  }
+
+  .carousel-container,
+  .carousel-container-content {
+    -servicestudio-min-height: 80px !important;
+  }
+  .carousel-container-content{
+    .OSFillParent { display: inline-block; }
+
+    .grid-gallery .OSFillParent {
+      display: inherit;
+    }
+  }
+  .carousel-container,
+  .carousel-container .list.list-group {
+    background-color: transparent;
+    white-space: nowrap;
+    -servicestudio-white-space: normal;
+  }
+
+  /* Used for list and non list elements */
+  .carousel-container > .carousel-container-content{
+    > *:not(.list),
+    > .list > div {
+      display: inline-block;
+      width: 100%;
+      white-space: normal
+    }
+  }
+  .carousel-navigation {
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: var(--border-radius-circle);
+    color: var(--color-neutral-7);
+    display: flex;
+    font-size: var(--font-size-h4);
+    height: 40px;
+    justify-content: center;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25px);
+    transition: opacity 150ms linear;
+    width: 40px;
+    will-change: opacity;
+    z-index: 2;
+    cursor: pointer;
+
+    &.disabled { opacity: .3; }
+    
+    &.carousel-navigation-left { left: 24px; }
+    
+    &.carousel-navigation-right {
+      right: 24px;
+      text-align: right;
+    }
+  }
+
+  &:not(.no-swipe) .carousel-container-content:hover { cursor: grab; }
+  
+  .carousel-dots-container {
+    margin-top: var(--space-base);
+    text-align: center;
+
+    .carousel-dot {
+      background-color: var(--color-neutral-5);
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      height: 8px;
+      margin: 0 4px;
+      width: 8px;
+      
+      &.active { background-color: var(--color-primary); }
+    }
+  }
+  .carousel-navigation.hidden,
+  .carousel-dots-container.disabled {
+    display: none;
+  }
+
+  .carousel-container .carousel-container-content{
+    > .list:not([data-virtualization-disabled]),
+    > .list:not([data-animation-disabled]){
+      -servicestudio-pointer-events: none;
+      -servicestudio-min-height: 225px;
+
+      > * { -servicestudio-display: none !important; }
+
+      &:after {
+        -servicestudio-content: " ";
+        -servicestudio-position: absolute;
+        -servicestudio-top: 0;
+        -servicestudio-left: 0;
+        -servicestudio-width: 100%;
+        -servicestudio-height: 100%;
+        -servicestudio-min-height: 225px;
+        -servicestudio-background-color: #fff;
+        -servicestudio-background-position: center;
+        -servicestudio-background-size: 291px 225px;
+        -servicestudio-background-repeat: no-repeat;
+      }
+    }
+  }
+  
+  /* Fix for lists inside Carousel */
+  .list.list-group { overflow: initial; }
+}
+
+

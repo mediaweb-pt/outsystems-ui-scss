@@ -1,0 +1,19 @@
+/* $4.6.1 - Patterns - Utilities - AlignCenter */
+.vertical-align {
+  align-items: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+
+  span {
+    display: inherit;
+  }
+}
+
+[style*="text-align: center"] .vertical-align {
+  justify-content: center;
+}
+
+[style*="text-align: right"] .vertical-align {
+  justify-content: flex-end;
+}
