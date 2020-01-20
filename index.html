@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>OutSystems UI Base Web SCSS</title>
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+
+    <!--- CSS for the homepage --->
+
+    <link type="text/css" rel="stylesheet" href="css/outsystems-ui.css">
+    <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <style>
+        :root {
+            --color-primary: #8433BA;
+            --color-secondary: #303d60;
+        }
+
+        .font-size-m {
+            font-size: var(--font-size-h6)
+        }
+
+        .mediaweb-logo {max-width: 180px;}
+
+
+        [class*="ThemeGrid_Width"] {
+            display: inline-block;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            *zoom: 1;
+            *display: inline;
+        }
+
+        .ThemeGrid_Container {
+            max-width: 1280px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .home-banner {
+            background-image: url('assets/confettis.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 150px;
+            padding-top: 110px;
+        }
+
+        .home-banner .font-size-display {
+            --font-size-display: 80px;
+        }
+
+        .layout-home .content .ThemeGrid_Container {
+            padding: 0 var(--space-xl);
+        }
+
+        .home-menu {
+            margin-top: -70px;
+        }
+
+        .home-card {
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+        }
+
+        .home-padding {
+            padding: 100px 0;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div class="layout layout-top layout-home">
+        <div class="main-content">
+            <div class="content">
+                <div class="home-banner background-primary">
+                    <div class="ThemeGrid_Container">
+                        <div class="heading1 text-neutral-0">OutSystems UI</div>
+                        <div class="font-size-display text-neutral-0">Reative SCSS</div>
+                        <div class="margin-top-xl heading4 text-neutral-0 font-regular">A powerful tool to
+                            create a consistent and beautiful user experience on your apps.</div>
+                    </div>
+                </div>
+                <div class="home-padding">
+                    <div class="ThemeGrid_Container">
+                        <div class="heading1 text-align-center">Start Customizing With Powerful Tools</div>
+                        <div class="margin-top-xxl">
+                            <div class="columns columns5 gutter-xl tablet-break-middle phone-break-all">
+                                <div class="columns-item">
+                                    <div align="center">
+                                        <div><img class="display-block margin-auto" alt="" src="/assets/3.svg"
+                                                style="width:60px;">
+                                        </div>
+                                        <div class="margin-top-m heading6">Customize Components</div>
+                                        <div class="margin-top-m text-neutral-8">Start Customizing
+                                            <br>a very rich library<br>of components<br>and widgets.</div>
+                                    </div>
+                                </div>
+                                <div class="columns-item">
+                                    <div align="center">
+                                        <div><img class="display-block margin-auto" alt="" src="/assets/4.svg"
+                                                style="width:60px;">
+                                        </div>
+                                        <div class="margin-top-m heading6">Find Easily</div>
+                                        <div class="margin-top-m text-neutral-8">Find easily what you are<br>looking
+                                            for, thanks<br>to a well structured<br>SASS project</div>
+                                    </div>
+                                </div>
+                                <div class="columns-item">
+                                    <div align="center">
+                                        <div><img class="display-block margin-auto" alt="" src="/assets/5.svg"
+                                                style="width:60px;">
+                                        </div>
+                                        <div class="margin-top-m heading6">Add Components</div>
+                                        <div class="margin-top-m text-neutral-8">You can add your<br>components and
+                                            classify <br>them easily like we do.<br></div>
+                                    </div>
+                                </div>
+                                <div class="columns-item">
+                                    <div align="center">
+                                        <div><img class="display-block margin-auto" alt="" src="/assets/1.svg"
+                                                style="width:60px;">
+                                        </div>
+                                        <div class="margin-top-m heading6">Increase Speed</div>
+                                        <div class="margin-top-m text-neutral-8">Increase your development<br>speed with
+                                            a powerful<br>SASS library.</div>
+                                    </div>
+                                </div>
+                                <div class="columns-item">
+                                    <div align="center">
+                                        <div><img class="display-block margin-auto" alt="" src="/assets/2.svg"
+                                                style="width:60px;">
+                                        </div>
+                                        <div class="margin-top-m heading6">Maintain Faster</div>
+                                        <div class="margin-top-m text-neutral-8">Thanks to the pattern that <br>we are
+                                            following, maintenance <br>is easier than you think.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-y-xxl background-secondary">
+                    <div class="ThemeGrid_Container">
+                        <div class="columns columns4 gutter-xl tablet-break-none phone-break-all">
+                            <div class="columns-item">
+                                <img class="mediaweb-logo" alt="" src="/assets/mediaweb_logo_white.png"><br>
+                                <div class="font-semi-bold text-neutral-0">CONNECT WITH US</div><br>
+                                <a class="padding-s font-size-m" href="https://www.facebook.com/mediawebcreations/"
+                                    title="Facebook" target="_blank"><i class="fab fa-facebook text-neutral-0"></i></a>
+                                <a class="padding-s font-size-m" href="https://www.youtube.com/c/mediawebpt"
+                                    title="Youtube" target="_blank"><i class="fab fa-youtube text-neutral-0"></i></a>
+                                <a class="padding-s font-size-m" href="https://github.com/mediaweb-pt" title="Github"
+                                    target="_blank"><i class="fab fa-github text-neutral-0"></i></a>
+                                <a class="padding-s font-size-m"
+                                    href="https://www.linkedin.com/company/mediaweb-creations/" title="Linkedin"
+                                    target="_blank"><i class="fab fa-linkedin text-neutral-0"></i></a>
+                                <a class="padding-s font-size-m" href="https://www.instagram.com/mediaweb.pt/"
+                                    title="Instagram" target="_blank"><i class="fab fa-instagram text-neutral-0"></i></a>
+                            </div>
+                            <div class="columns-item">
+                            </div>
+                            <div class="columns-item">
+                                <div class="font-semi-bold text-neutral-0">WHERE CAN YOU FIND US</div>
+                                <div class="margin-top-m text-neutral-0">
+                                    Leiria <br> Rua Anzebino da Cruz Saraiva,
+                                    Ed. Beira Rio, Piso 1,
+                                    Esc. 28 2415-371
+                                    (+351) 244 028 529</div>
+                            </div>
+                            <div class="columns-item">
+                                <br>
+                                <div class="margin-top-m text-neutral-0">
+                                    Lisboa <br>
+                                    Rua General Ferreira Martins,
+                                    10-5ºD 1495-137, Algés</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

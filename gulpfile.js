@@ -16,7 +16,7 @@ function browserSync(done) {
         baseDir: "./"
       },
       port: 3000,
-      startPath: 'templates/homepage/homepage.html'
+      startPath: './index.html'
     });
     done();
   }
