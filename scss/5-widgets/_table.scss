@@ -86,9 +86,12 @@
 }
 
 .phone{
-  thead {
-    display: none;
+  .table {
+    thead {
+      display: none;
+    }
   }
+
 
   tr,
   td {
@@ -180,6 +183,8 @@ td:not([data-header]):before {
     border-top-color: var(--color-neutral-7);
     animation: spin 1s infinite linear, fade 300ms ease;
     box-sizing: border-box;
+    -servicestudio--webkit-animation: none;
+            -servicestudio-animation: none;
   }
 }
 

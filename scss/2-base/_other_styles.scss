@@ -171,6 +171,52 @@ a:not(.Button)[disabled="disabled"] {
   -servicestudio-display: none;
 }
 
+.no-transition {
+  transition: none !important;
+}
+
+.wcag-hide-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+
+  -servicestudio-display: none;
+}
+
+/* Skip-nav link used on Accessibility*/
+.skip-nav[data-showskipcontent="false"] {
+  display: none;
+}
+
+.skip-nav[data-showskipcontent="true"] {
+  display: block;
+}
+
+.skip-nav {
+  left: var(--space-xl);
+  opacity: 0;
+  pointer-events: none;
+  padding: var(--space-s) var(--space-base);
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  z-index: 200;     
+}
+
+.skip-nav:focus,
+.skip-nav:active {
+  background-color: var(--color-info);
+  color: var(--color-neutral-0); 
+  opacity: 1;
+  pointer-events: auto;    
+}
+
 @font-face {
   font-family: 'SilkWeb4';
   src: url('SilkWeb4.eot');

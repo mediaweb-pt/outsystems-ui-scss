@@ -39,7 +39,7 @@ $colors:
   'yellow', 
   'orange';
 
-$color-primary: #0070AF !default;
+$color-primary: #1068eb !default;
 $color-primary-lightest:lighten($color-primary, 40%);
 $color-primary-lighter: lighten($color-primary, 25%);
 $color-primary-light: lighten($color-primary, 15%);
@@ -172,7 +172,7 @@ $color-neutral-10: #15181a !default;
 
 
 $color-error-light: #fceaea !default;
-$color-error: #e03131 !default;
+$color-error: #dc2020 !default;
 
 $color-warning-light: #fdf6e5 !default;
 $color-warning: #e9a100 !default;

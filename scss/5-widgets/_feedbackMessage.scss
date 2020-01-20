@@ -36,6 +36,7 @@ div.feedback-message{
   }
   &-warning {
     background-color: var(--color-warning);
+    color: var(--color-neutral-10);
   }
 }
 
@@ -93,4 +94,9 @@ div.feedback-message{
   100% {
     transform: translateY(24px) translateX(-50%) translateZ(0);
   }
+}
+
+/* $5.11 - Widgets - App Feedback */
+.ECT_FeedbackContainer div {
+  z-index:5000 !important; /* the AF stylesheet gets loaded after this */
 }

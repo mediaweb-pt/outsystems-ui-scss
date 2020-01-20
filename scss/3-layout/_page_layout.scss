@@ -466,8 +466,12 @@ body,
     z-index: 102;
 }
 
-.desktop .aside-expandable.menu-visible .app-menu-content {
+.desktop .aside-expandable .app-menu-content {
     display: none;
+}
+
+.desktop .aside-expandable.menu-visible .app-menu-content {
+    display: block;
 }
 
 .desktop .layout-side.aside-expandable .app-menu-content {
@@ -478,7 +482,11 @@ body,
     z-index: 105;
 }
 
-.aside-expandable.menu-visible .main,
+.desktop .aside-expandable.menu-visible .main {
+    margin-left: var(--side-menu-size);
+}
+
+.aside-expandable .main,
 .layout-side.aside-overlay .main,
 .tablet .layout-side .main,
 .phone .layout-side .main {
@@ -774,40 +782,4 @@ body,
 
 .section-content {
     position: relative;
-}
-
-/* ================================================================ */
-/*  $3.5 - Page Layout - Login                                      */
-/* ================================================================ */
-.login-screen {
-    height: 100%;
-    background-color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-form {
-    background-color: var(--color-neutral-0);
-    border-radius: var(--border-radius-soft);
-    box-shadow: var(--shadow-l);
-    padding: var(--space-xxl);
-    min-width: 435px;
-    z-index: 2;
-}
-
-.login-screen > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.phone .login-form {
-    margin: var(--space-none) var(--space-base);
-    min-width: auto;
-    padding: var(--space-l);
-    width: 100%;
 }

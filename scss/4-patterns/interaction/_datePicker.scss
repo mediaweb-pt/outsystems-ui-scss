@@ -193,7 +193,7 @@ input.OSFillParent.calendar-input {
 .is-disabled{
   .pika-button,
   &.is-outside-current-month .pika-button {
-    color: var(--color-neutral-6);
+    color: var(--color-neutral-7);
     pointer-events: none;
     text-decoration: line-through;
   }
@@ -274,4 +274,97 @@ input.OSFillParent.calendar-input {
   option {
     color: var(--color-neutral-10);
   }
+}
+
+/* Accessibility improvements*/
+.desktop {
+
+  &.is--focusable {
+
+    .pika-title {
+
+      select {
+        opacity: 1;
+        border: none;
+        color: var(--color-primary);
+
+        &:hover {
+          border-bottom: 1px solid var(--color-primary);
+        }
+
+        option {
+          color: var(--color-neutral-10);
+        }
+      }
+
+      .pika-label {
+        display: flex;
+        align-items: center;
+      }
+    } 
+  }
+}
+
+
+/* Keycode shortcuts dialog */
+.calendar-help-dialog {
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-10);
+  bottom: 0;
+  display: none;
+  left: 0;
+  padding: var(--space-s);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  &.is--open {
+    display: block;
+  }
+}
+
+.calendar-help-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: var(--space-m);
+  }
+}
+
+
+.calendar-help-trigger {
+  background-color: var(--color-info);
+  clip: rect(0, 0, 0, 0);
+  color: #fff;
+  height: 0;
+  left: 50%;
+  overflow: hidden;
+  padding: var(--space-s);
+  transform: translateX(-50%);
+  top: var(--space-xxl);
+  position: absolute;
+  white-space: nowrap;
+  width: 0;
+
+  &:focus {
+    clip: initial;
+    height: auto;
+    overflow: visible;
+    z-index: 100;
+    width: auto;
+  }
+}
+
+.calendar-help-close {
+  background-color: var(--color-neutral-0);
+  color:  var(--color-neutral-10);
+  height: auto;
 }

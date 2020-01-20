@@ -41,6 +41,10 @@ abbr[title] {
   outline: 0;
 }
 
+.is--focusable :focus {
+  outline: var(--border-size-m) solid #A3DAFF;
+}
+
 input, 
 textarea, 
 select, 
