@@ -3,10 +3,14 @@
   min-width: 150px;
   position: relative;
 
-  &.is-open.is-focused .choices__inner {
-    border: var(--border-size-s) solid var(--color-primary);
-    border-radius: var(--border-radius-soft);
-  }
+
+  &.is-open.is-focused,
+  &[data-type="select-multiple"].is-open.is-focused {
+    .choices__inner {
+      border: var(--border-size-s) solid var(--color-primary);
+      border-radius: var(--border-radius-soft);
+    }
+  } 
 
   &.Not_Valid .choices__inner { border: var(--border-size-s) solid var(--color-error); }
 

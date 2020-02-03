@@ -4396,7 +4396,8 @@ input.OSFillParent.calendar-input {
     position: relative;
 }
 
-.choices.is-open.is-focused .choices__inner {
+.choices.is-open.is-focused .choices__inner,
+.choices[data-type="select-multiple"].is-open.is-focused .choices__inner {
     border: var(--border-size-s) solid var(--color-primary);
     border-radius: var(--border-radius-soft);
 }
@@ -7513,6 +7514,10 @@ span.validation-message {
 
 
 /* $5.9 - Widgets - Popup */
+[data-popup-backdrop] {
+    z-index: 250;
+}
+
 .popup-backdrop {
     background-color: rgba(0, 0, 0, .25);
 }
