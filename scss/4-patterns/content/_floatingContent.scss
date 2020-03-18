@@ -125,3 +125,29 @@
     }
   }
 }
+
+.phone {
+  .floating-content-bottom {
+    bottom: var(--os-safe-area-bottom);
+  }
+  
+  .floating-content-bottom-left {
+    bottom: var(--os-safe-area-bottom);
+    left: var(--os-safe-area-left);
+  } 
+  
+  .floating-content-bottom-right {
+    bottom: var(--os-safe-area-bottom);
+    right: var(--os-safe-area-right);
+  }
+  
+  .floating-content-top-left,
+  .floating-content-left {
+    left: var(--os-safe-area-left);
+  }
+  
+  .floating-content-top-right,
+  .floating-content-right {
+    right: var(--os-safe-area-right);
+  }
+}

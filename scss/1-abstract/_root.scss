@@ -205,5 +205,10 @@
     --color-background-body: #{$color-background-body};
     --header-size: #{$header-size};
     --side-menu-size: #{$side-menu-size};
-
+    
+    /* iOS Safe Areas (Notch Support) */
+    --os-safe-area-top: #{$os-safe-area-top};
+    --os-safe-area-right: #{$os-safe-area-right};
+    --os-safe-area-bottom: #{$os-safe-area-bottom};
+    --os-safe-area-left: #{$os-safe-area-left};
 }

@@ -165,10 +165,10 @@ $color-neutral-3: #e9ecef !default;
 $color-neutral-4: #dee2e6 !default;
 $color-neutral-5: #ced4da !default;
 $color-neutral-6: #adb5bd !default;
-$color-neutral-7: #868e96 !default;
-$color-neutral-8: #5c656d !default;
-$color-neutral-9: #343a40 !default;
-$color-neutral-10: #15181a !default;
+$color-neutral-7: #6a7178 !default;
+$color-neutral-8: #4f575e !default;
+$color-neutral-9: #272b30 !default;
+$color-neutral-10: #101213 !default;
 
 
 $color-error-light: #fceaea !default;
@@ -214,3 +214,9 @@ $shadow-xl: 0 8px 10px rgba(0, 0, 0, .1) !default;
 $color-background-body: #f3f6f8 !default;
 $header-size: 56px !default;
 $side-menu-size: 300px !default;
+
+/* iOS Safe Areas (Notch Support) */
+$os-safe-area-top: env(safe-area-inset-top);
+$os-safe-area-right: env(safe-area-inset-right);
+$os-safe-area-bottom: env(safe-area-inset-bottom);
+$os-safe-area-left: env(safe-area-inset-left);

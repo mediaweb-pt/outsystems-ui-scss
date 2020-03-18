@@ -3,6 +3,15 @@
   -servicestudio-min-height: 100px;
 }
 
+.phone .pswp__caption__center {
+  padding-bottom: calc(var(--os-safe-area-bottom) + 10px);
+}
+
+.pswp__top-bar {
+  padding-left: var(--os-safe-area-left);
+  padding-right: var(--os-safe-area-right);
+}
+
 /* DEPRECATED Lightbox item */
 .hide-lightbox-image .lightbox-image { display: none; }
 
