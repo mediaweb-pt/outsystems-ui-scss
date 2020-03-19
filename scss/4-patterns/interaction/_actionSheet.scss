@@ -44,7 +44,10 @@
   bottom: 0;
   left: 0;
   margin-top: 0;
-  padding: var(--space-base);
+  padding-top: var(--space-base); 
+	padding-right: calc(var(--os-safe-area-right) + var(--space-base));
+	padding-bottom: calc(var(--os-safe-area-bottom) + var(--space-base));
+	padding-left: calc(var(--os-safe-area-left) + var(--space-base));
   pointer-events: auto;
   position: absolute;
   transform: translateY(100%);
