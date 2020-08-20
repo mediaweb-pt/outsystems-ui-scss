@@ -14,9 +14,6 @@
     --font-size-h5: #{$font-size-h5};
     --font-size-h6: #{$font-size-h6};
 
-    --font-size-xl: #{$font-size-xl};
-    --font-size-l: #{$font-size-l}; 
-    --font-size-m: #{$font-size-m}; 
     --font-size-base: #{$font-size-base};
     --font-size-s: #{$font-size-s};
     --font-size-xs: #{$font-size-xs};
@@ -29,25 +26,15 @@
     
     /* Color - Brand */
 
-    --color-primary-lightest: #{$color-primary-lightest};
-    --color-primary-lighter: #{$color-primary-lighter};
-    --color-primary-light: #{$color-primary-light};
     --color-primary: #{$color-primary};
-    --color-primary-dark: #{$color-primary-dark};
-    --color-primary-darker: #{$color-primary-darker};
-    --color-primary-darkest: #{$color-primary-darkest};
-
-    --color-secondary-lightest: #{$color-secondary-lightest};
-    --color-secondary-lighter: #{$color-secondary-lighter};
-    --color-secondary-light: #{$color-secondary-light};
     --color-secondary: #{$color-secondary};
-    --color-secondary-dark: #{$color-secondary-dark};
-    --color-secondary-darker: #{$color-secondary-darker};
-    --color-secondary-darkest: #{$color-secondary-darkest};
-  
     --color-primary-hover: #{$color-primary-hover};
     --color-primary-selected: #{$color-primary-selected};
+    --color-primary-lightest: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9));
 
+    --color-focus-outer: #FFD337;
+    --color-focus-inner: var(--color-neutral-10);
+  
     /* Color - Extended */
     --color-red-lightest: #{$color-red-lightest};
     --color-red-lighter: #{$color-red-lighter};
@@ -202,9 +189,13 @@
     --shadow-xl: #{$shadow-xl};
 
     /* App Settings */
+    --header-color: #ffffff;
     --color-background-body: #{$color-background-body};
+    --color-background-login: #ffffff;
     --header-size: #{$header-size};
+    --header-size-content: 48px;
     --side-menu-size: #{$side-menu-size};
+    --bottom-bar-size: 56px;
     
     /* iOS Safe Areas (Notch Support) */
     --os-safe-area-top: #{$os-safe-area-top};

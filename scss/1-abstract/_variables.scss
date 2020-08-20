@@ -46,10 +46,10 @@ $color-primary-light: lighten($color-primary, 15%);
 $color-primary-dark: darken($color-primary, 5%);
 $color-primary-darker: darken($color-primary, 10%);
 $color-primary-darkest: darken($color-primary, 15%);
-$color-primary-hover: $color-primary-light;
-$color-primary-selected: rgba(112, 48, 160, 0.12);
+$color-primary-hover: #295fd6;
+$color-primary-selected: rgba(20, 110, 245, 0.12);
 
-$color-secondary: #FF9300 !default;
+$color-secondary: #303d60 !default;
 $color-secondary-lightest:lighten($color-secondary, 40%);
 $color-secondary-lighter: lighten($color-secondary, 25%);
 $color-secondary-light: lighten($color-secondary, 15%);
@@ -77,7 +77,7 @@ $color-yellow: #f59f00 !default;
 $color-red-lightest:lighten($color-red, 40%);
 $color-red-lighter: lighten($color-red, 25%);
 $color-red-light: lighten($color-red, 15%);
-$color-red-dark: darken($color-red, 5%);
+$color-red-dark: darken($color-red, 6%);
 $color-red-darker: darken($color-red, 10%);
 $color-red-darkest: darken($color-red, 15%);
 
@@ -178,10 +178,10 @@ $color-warning-light: #fdf6e5 !default;
 $color-warning: #e9a100 !default;
 
 $color-success-light: #eaf3eb !default;
-$color-success: #2a843c !default;
+$color-success: #29823b !default;
 
 $color-info-light: #e5f5fc !default;
-$color-info: #009dde !default;
+$color-info: #017aad !default;
 
 
 $space-none: 0 !default;

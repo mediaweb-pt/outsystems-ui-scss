@@ -16,14 +16,39 @@ a {
         -webkit-transition: color 180ms linear;
         transition: color 180ms linear;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--color-primary-hover);
+        text-decoration: underline;  
+    }
+    .phone &:hover,
+    .phone &:focus,
+    .tablet &:hover,
+    .tablet &:focus {
+        text-decoration: none;   
     }
     &[disabled] {
         color: var(--color-neutral-6);
     }
 }
 
+/* Accessibility Styles */ 
+.has-accessible-features{
+    & a{
+        &:focus {
+            background-color: var(--color-focus-outer);
+            box-shadow: 0 2px var(--color-focus-inner);
+            color: var(--color-neutral-10);
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &[disabled]{
+            color: var(--color-neutral-6);
+        }
+    }
+} 
 
 /* $2.2 - HTML Elements - Images  */
 
@@ -76,60 +101,6 @@ h6 {
     margin: 0;
 }
 
-
-/*  Small View - Swich */
-
-.small-view {
-    & .swich {
-        height: 20px;
-        width: 38px;
-    }
-}
-
-
-/*  Small View - Button Group */
-
-.small-view {
-    & .button-group .button-group-item {
-        height: 30px;
-        font-size: 12px;
-        padding: var(--space-none) var(--space-s);
-    }
-}
-
-
-/* Small View - Input */
-
-.small-view {
-    & .input {
-        height: 30px;
-    }
-    &.small-view .form-control[data-input] {
-        height: 30px;
-        width: 100%;
-    }
-    /* Small View - Dropdown */
-    & .dropdown-display {
-        height: 32px;
-    }
-    & .dropdown-container:after {
-        top: 10px;
-    }
-    & [data-dropdown]>select.dropdown-display {
-        text-transform: capitalize;
-        height: 30px;
-        width: 150px;
-    }
-    /* Small View - Dropdown Search */
-    & .choices__list--single .choices__item {
-        padding-top: none;
-    }
-    & .choices[data-type*="select-one"]:after {
-        top: 4px;
-    }
-}
-
-
 /* $2.4 - HTML Elements - Inputs and Selectors */
 
 .form-control {
@@ -144,10 +115,24 @@ h6 {
         padding: var(--space-none) var(--space-base);
         transition: all 180ms linear;
     }
+    .tablet &,.phone &{
+        &[data-input], 
+        &[data-textarea]{
+            font-size: var(--font-size-base);
+            height: 48px;
+        }
+    }
     &[data-textarea] {
         height: auto;
         padding: var(--space-base);
         resize: auto;
+        vertical-align: top;
+    }
+    .tablet &,
+    .phone &{
+        &[data-textarea]{
+            height: auto;
+        }
     }
     &[data-input]:hover,
     &[data-textarea]:hover {
@@ -166,9 +151,18 @@ h6 {
     &[data-input][disabled],
     &[data-textarea][disabled] {
         background-color: var(--color-neutral-2);
-        border: 1px solid var(--color-neutral-4);
+        border: var(--border-size-s) solid var(--color-neutral-4);
         color: var(--color-neutral-6);
         pointer-events: none;
+    }
+    .layout-native .header-top-content &[data-input] {
+        background-color: var(--header-color);
+        border-radius: 0;
+        border: 0;
+        border-bottom: var(--border-size-s) solid transparent;
+        &:focus {
+            border-bottom: var(--border-size-s) solid var(--color-primary);    
+        }
     }
     &.input-small {
         &[data-input] {
@@ -190,6 +184,20 @@ h6 {
             font-size: var(--font-size-base);
         }
     }
+    .has-accessible-features &{
+        &[data-input], 
+        &[data-textarea]{
+            border-color: var(--color-neutral-7);
+
+            &:hover{
+                border-color: var(--color-neutral-8);
+            }
+
+            &:focus{
+                border-color: var(--color-focus-inner);
+            }
+        }
+    } 
 }
 
 ::-webkit-input-placeholder,
@@ -198,20 +206,31 @@ h6 {
     color: var(--color-neutral-7);
 }
 
+
 [data-switch] {
     background-color: transparent;
     border-radius: 0;
+    height: 32px;
     overflow: initial;
+    width: 50px;
     &[disabled] {
         pointer-events: none;
     }
     &:empty:before {
         background-color: var(--color-neutral-5);
         border: var(--border-size-s) solid var(--color-neutral-5);
-        border-radius: 25px;
+        border-radius: var(--border-radius-rounded);
         height: 30px;
         opacity: 1;
         width: 48px;
+        -webkit-transition: all 180ms linear;
+            transition: all 180ms linear;
+    }
+    &:hover{
+        &:before {
+            background-color: var(--color-neutral-6);
+            border: var(--border-size-s) solid var(--color-neutral-6);    
+        }
     }
     &:checked:before {
         background-color: var(--color-primary);
@@ -264,23 +283,90 @@ h6 {
     }
     &[disabled] {
         &:before,
-        &:checked:before {
-            background-color: var(--color-neutral-2);
-            border: var(--border-size-s) solid var(--color-neutral-4);
+        &:checked{
+            &:before {
+                background-color: var(--color-neutral-2);
+                border: var(--border-size-s) solid var(--color-neutral-4);
+            }
+            &:after {
+                border: var(--border-size-l) solid #fff;
+                border-right: var(--border-size-none) !important;
+                border-top: var(--border-size-none) !important;
+                display: block;
+                height: 4px;
+                left: 5px;
+                top: 7px;
+                width: 12px;
+            }
+        }
+    }    
+    .tablet &,
+    .phone &{
+        & {
+            height: 32px;
+            width: 32px;
+            &:before{
+                height: 30px;
+                width: 30px;
+            }
+            &:checked{
+                &:after{
+                    left: 9px;
+                    top: 11px;
+                }
+            }
+        }
+    }    
+    .has-accessible-features &{
+        border-radius: var(--border-radius-soft);
+        &:before {
+            border-color: var(--color-neutral-7);    
+        }
+        &:hover{
+            &:before{
+                border-color: var(--color-neutral-8);     
+            }
+        }
+        &:checked{
+            &:before{
+                border-color: var(--color-primary);
+            }
+        }
+        &:focus{
+            &:before{
+                border-color: var(--color-focus-inner); 
+            }
         }
     }
-    &:checked:after {
-        border: var(--border-size-l) solid #fff;
-        border-right: var(--border-size-none) !important;
-        border-top: var(--border-size-none) !important;
-        display: block;
-        height: 4px;
-        left: 5px;
-        top: 7px;
-        width: 12px;
-    }
-    &[disabled]:checked:after {
-        border: var(--border-size-l) solid var(--color-neutral-4);
+}
+
+[data-switch]{
+    .has-accessible-feature &{
+        border-radius: var(--border-radius-rounded);
+
+        &:empty{
+            :before{
+                border-color: var(--color-neutral-7);
+                background-color: var(--color-neutral-7);
+            }
+        }
+        &:hover{
+            :before{
+                border-color: var(--color-neutral-8);
+                background-color: var(--color-neutral-8);  
+            }
+        }
+        &:checked{
+            :before{
+                border-color: var(--color-primary);
+                background-color: var(--color-primary);   
+            }
+        }
+        &:focus{
+            :before{
+                border-color: var(--color-focus-inner);  
+            }
+        }
     }
 }
 
@@ -359,6 +445,21 @@ h6 {
         &.dropdown-popup-row-selected:hover {
             background: var(--color-neutral-2);
         }
+    }
+    & > {
+        div.dropdown-display:hover,
+        select.dropdown-display:hover{
+            border: var(--border-size-s) solid var(--color-neutral-6);
+        }
+    }
+    
+}
+
+.tablet,.phone {
+    div.dropdown-display, 
+    select.dropdown-display{
+        font-size: var(--font-size-base);
+        height: 48px;
     }
 }
 
