@@ -7,7 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  .layout-native & {
+    padding: var(--os-safe-area-top) var(--os-safe-area-right) var(--os-safe-area-bottom) var(--os-safe-area-left); 
+    background-color: var(--color-background-login);
+  }  
+  .android[data-status-bar-height] .layout-native & {
+    padding-top: var(--status-bar-height);
+  }
 }
+
 
 .login-form {
   background-color: var(--color-neutral-0);

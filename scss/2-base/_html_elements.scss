@@ -469,7 +469,7 @@ div {
             @at-root &,
             select.dropdown-display.dropdown-disabled {
                 background-color: var(--color-neutral-2);
-                border: 1px solid var(--color-neutral-4);
+                border: var(--border-size-s) solid var(--color-neutral-4);
                 color: var(--color-neutral-6);
                 pointer-events: none;
             }
@@ -504,6 +504,24 @@ div {
             transform: rotate(-45deg) translateY(0) translateX(0);
             transition: all 300ms ease-in-out;
             width: 8px;
+        }
+        .is-rtl &{
+            &:after {
+                right: auto;
+                left: 16px;
+            }
+        }
+        
+        .tablet &,
+        .phone &{
+            &:after{
+                top: 20px;
+            }
+        }
+        [data-dropdown] > &{
+            &:after {
+                content: none;
+            }
         }
     }
     &-expanded {
@@ -600,7 +618,7 @@ div {
     &-cancel {
         background-color: var(--color-neutral-0);
         border: var(--border-size-s) solid var(--color-neutral-8);
-        color: var(--color-neutral-8);
+        color: var(--color-neutral-7);
     }
     &-success {
         background-color: var(--color-success);
@@ -618,18 +636,74 @@ div {
         color: var(--color-neutral-6);
         pointer-events: none;
     }
+
+    /* Default Responsive */
+
+    .phone &,
+    .tablet &{
+        & {
+            font-size: var(--font-size-base);
+            height: 48px;
+        }
+        &-large{
+            height: 56px;
+        }
+        &-small{
+            font-size: var(--font-size-s);
+            height: 40px;
+        }
+    }    
 }
 
+.layout-native {
+    & .footer,
+    & .bottom-bar{
+        & .btn{
+            border-radius: 0;
+            height: 100%;
+        }
+    }
+    .ios &{
+        & .footer {
+            height: calc(var(--os-safe-area-bottom) + var(--bottom-bar-size));
+        }
+        
+    } 
+    & .footer{ 
+        .btn {
+            padding-bottom: var(--os-safe-area-bottom);
+        }
+    }
+    & .header-right {
+        .btn {
+            background-color: transparent;
+            border: 0;
+            color: var(--color-primary);
+            font-size: var(--font-size-base);
+            padding: 0;
+        }
+    }
+}
 
 /* Default Responsive */
-
 .phone {
-    .btn {
+    & .layout:not(.layout-native) .btn {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         margin-left: 0;
         width: 100%;
-        +.btn {
+        + .btn{
             margin-top: var(--space-base);
         }
     }
 }
+/* Accessibility Styles */ 
+.has-accessible-features{
+    & .btn:focus {
+        border-color: var(--color-focus-inner);
+    } 
+}
+
+
+

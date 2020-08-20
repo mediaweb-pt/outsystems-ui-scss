@@ -98,6 +98,46 @@
     flex: 2;
   }
 
+  &.gutter-none > .columns-item {
+  margin-bottom: var(--space-none);
+    padding: var(--space-none) var(--space-none);
+  } 
+
+  &.gutter-xs > .columns-item {
+    margin-bottom: var(--space-xs);
+    padding: var(--space-none) calc(var(--space-xs) / 2);
+  }
+
+  &.gutter-s > .columns-item {
+    margin-bottom: var(--space-s);
+    padding: var(--space-none) calc(var(--space-s) / 2);
+  }
+
+  &.gutter-base > .columns-item {
+    margin-bottom: var(--space-base);
+    padding: var(--space-none) calc(var(--space-base) / 2);
+  }
+
+  &.gutter-m > .columns-item {
+    margin-bottom: var(--space-m);
+    padding: var(--space-none) calc(var(--space-m) / 2);
+  }
+
+  &.gutter-l > .columns-item {
+    margin-bottom: var(--space-l);
+    padding: var(--space-none) calc(var(--space-l) / 2);
+  }
+
+  &.gutter-xl > .columns-item {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-none) calc(var(--space-xl) / 2);
+  }
+
+  &.gutter-xxl > .columns-item {
+    margin-bottom: var(--space-xxl);
+    padding: var(--space-none) calc(var(--space-xxl) / 2);
+  }
+
   .columns-item > .card { 
     height: 100%; 
   }
@@ -108,7 +148,35 @@
 }
 
 /* Columns Responsive */
+.tablet .columns.tablet-break-first > .columns-item:first-child,
+.phone .columns.phone-break-first > .columns-item:first-child,
+.tablet .columns.tablet-break-last > .columns-item:last-child,
+.phone .columns.phone-break-last > .columns-item:last-child,
+.tablet .columns.tablet-break-all > .columns-item,
+.phone .columns.phone-break-all > .columns-item {
+    -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+    width: 100%;
+}
 
+.tablet .columns.columns2.tablet-break-middle > .columns-item,
+.phone .columns.columns2.phone-break-middle > .columns-item,
+.tablet .columns.columns3.tablet-break-middle > .columns-item:last-child,
+.phone .columns.columns3.phone-break-middle > .columns-item:last-child,
+.tablet .columns.columns-small-left.tablet-break-middle > .columns-item,
+.phone .columns.columns-small-left.phone-break-middle > .columns-item,
+.tablet .columns.columns-medium-left.tablet-break-middle > .columns-item,
+.phone .columns.columns-medium-left.phone-break-middle > .columns-item,
+.tablet .columns.columns-small-right.tablet-break-middle > .columns-item,
+.phone .columns.columns-small-right.phone-break-middle > .columns-item,
+.tablet .columns.columns-medium-right.tablet-break-middle > .columns-item,
+.phone .columns.columns-medium-right.phone-break-middle > .columns-item {
+    -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+    width: 100%;
+}
 
 @mixin columnsbreak($selectors...) {
   @for $i from 0 to length($selectors) {
