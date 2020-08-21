@@ -29,6 +29,12 @@
       }
     }
   }
+
+  .form .input-with-icon .input-with-icon-content-icon {
+    padding-bottom: var(--space-m);
+    z-index: 1;
+}
+
   
   &.input-with-icon-right .input-with-icon-content-icon {
     left: auto;

@@ -22,7 +22,9 @@
       }
     }
   }
-
+  .layout-native &-sectioned {
+    padding: 0;
+  }
   &-image{
     padding: var(--space-m) var(--space-m) var(--space-none);
     img {
@@ -37,9 +39,49 @@
     padding: var(--space-m) var(--space-m) var(--space-none) var(--space-m);
   }
 
+  .tablet &-title {
+    font-size: calc(var(--font-size-h4) - 1px);
+  }
+
+  .phone &-title {
+      font-size: calc(var(--font-size-h4) - 2px);
+  }
+
+  .layout-native &-title {
+      padding: var(--space-base) var(--space-base) var(--space-none) var(--space-base);
+  }
+
+  .card-sectioned.flex-direction-row &-image {
+      padding: var(--space-m) var(--space-none) var(--space-m) var(--space-m);
+  }
+
+  .layout-native .card-sectioned.flex-direction-row &-image {
+      padding: var(--space-base) var(--space-none) var(--space-base) var(--space-base);
+  }
+
+  &-sectioned.flex-direction-row &-image.padding-none {
+      padding: var(--space-none);
+  }
+
+  .layout-native &-sectioned.flex-direction-row &-image.padding-none {
+      padding: var(--space-none);
+  }
+
   &-content{
     flex: 1;
     padding: var(--space-m);
+  }
+
+  .layout-native &-content {
+    padding: var(--space-base);
+  }
+  
+  &-bottom {
+      padding: var(--space-none) var(--space-m) var(--space-m);
+  }
+  
+  .layout-native &-bottom {
+      padding: var(--space-none) var(--space-base) var(--space-base);
   }
 
   &-sectioned{

@@ -178,6 +178,109 @@
     width: 100%;
 }
 
+.tablet .columns.columns4.tablet-break-middle > .columns-item,
+.phone .columns.columns4.phone-break-middle > .columns-item {
+    -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+    width: 50%;
+}
+
+.tablet .columns.columns5.tablet-break-middle > .columns-item:nth-child(1),
+.tablet .columns.columns5.tablet-break-middle > .columns-item:nth-child(2),
+.tablet .columns.columns5.tablet-break-middle > .columns-item:nth-child(3),
+.phone .columns.columns5.phone-break-middle > .columns-item:nth-child(1),
+.phone .columns.columns5.phone-break-middle > .columns-item:nth-child(2),
+.phone .columns.columns5.phone-break-middle > .columns-item:nth-child(3),
+.tablet .columns.columns6.tablet-break-middle > .columns-item:nth-child(1),
+.tablet .columns.columns6.tablet-break-middle > .columns-item:nth-child(2),
+.tablet .columns.columns6.tablet-break-middle > .columns-item:nth-child(3),
+.phone .columns.columns6.phone-break-middle > .columns-item:nth-child(1),
+.phone .columns.columns6.phone-break-middle > .columns-item:nth-child(2),
+.phone .columns.columns6.phone-break-middle > .columns-item:nth-child(3) {
+    -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+    width: 33.333%;
+}
+
+.tablet .columns.gutter-xs.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xs.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xs.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xs.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xs.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xs.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xs.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xs.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-xs);
+}
+
+.tablet .columns.gutter-s.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-s.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-s.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-s.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-s.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-s.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-s.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-s.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-s);
+}
+
+.tablet .columns.gutter-base.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-base.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-base.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-base.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-base.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-base.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-base.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-base.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-base);
+}
+
+.tablet .columns.gutter-m.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-m.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-m.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-m.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-m.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-m.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-m.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-m.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-m);
+}
+
+.tablet .columns.gutter-l.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-l.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-l.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-l.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-l.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-l.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-l.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-l.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-l);
+}
+
+.tablet .columns.gutter-xl.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xl.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xl.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xl.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xl.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xl.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xl.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xl.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-xl);
+}
+
+.tablet .columns.gutter-xxl.tablet-break-first:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xxl.phone-break-first:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xxl.tablet-break-last:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xxl.phone-break-last:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xxl.tablet-break-middle:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xxl.phone-break-middle:only-child > .columns-item:not(:last-child),
+.tablet .columns.gutter-xxl.tablet-break-all:only-child > .columns-item:not(:last-child),
+.phone .columns.gutter-xxl.phone-break-all:only-child > .columns-item:not(:last-child) {
+    margin-bottom: var(--space-xxl);
+}
+
 @mixin columnsbreak($selectors...) {
   @for $i from 0 to length($selectors) {
     #{nth($selectors, $i + 1) +" " +nth($selectors, $i + 1)} {

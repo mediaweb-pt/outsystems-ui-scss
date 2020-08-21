@@ -78,12 +78,24 @@
     -servicestudio-position: static;
     -servicestudio--webkit-transform: none;
 
+    
     &.open {
       transform: translateX(0) translateZ(0);
       transition: all 330ms ease-out;
     }
   }
+  & .layout-native .split-right {
+    padding-top: calc(var(--header-size) + var(--os-safe-area-top));
+    padding-right: calc(var(--os-safe-area-right) + var(--space-base));
+    padding-bottom: calc(var(--os-safe-area-bottom) + var(--space-base));
+    padding-left: calc(var(--os-safe-area-left) + var(--space-base));
+  }
+  
+  &.android[data-status-bar-height] .layout-native .split-right {
+    padding-top: calc(var(--header-size) + var(--status-bar-height));
+  }
 }
+
 
 .split-right-close {
   left: calc(var(--os-safe-area-left) + var(--space-m));
@@ -96,4 +108,37 @@
     color: var(--color-neutral-8);
     font-size: 16px;
   }
+}
+
+.desktop .split-right-close,
+.tablet .split-right-close {
+    display: none;
+}
+
+.ios.phone .layout-native .split-right-close {
+    top: calc(var(--os-safe-area-top) + 12px);
+}
+
+.layout-native .split-right-close {
+    left: calc(var(--os-safe-area-left) + 24px);
+}
+
+.android[data-status-bar-height] .layout-native .split-right-close {
+    left: 16px;
+    top: calc(var(--status-bar-height) + 10px);
+}
+
+/* Accessibility Styles */
+.has-accessible-features .split-left .list-item:focus {
+    box-shadow: none;
+}
+
+.has-accessible-features .split-left .list-item:focus:before  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;    
+    bottom: 0;
+    border: 3px solid var(--color-focus-outer);
 }

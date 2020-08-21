@@ -21,6 +21,22 @@
     }
   }
 
+  &-photo {
+    margin-right: var(--space-base);
+  }
+  
+  .is-rtl{
+    &-photo {
+      margin-left: var(--space-base);
+      margin-right: 0;
+    }
+  } 
+
+  .is-rtl &.right .chat-photo {
+    margin-right: var(--space-base);
+    margin-left: var(--space-none);
+  }
+
   &-photo{
     margin-right: var(--space-base);
 

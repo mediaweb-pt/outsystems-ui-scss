@@ -17,4 +17,36 @@
   .section-title { background-color: var(--color-background-body); }
 }
 
+.tablet .section-title {
+  font-size: calc(var(--font-size-h2) - 2px);
+}
+
+.phone .section-title {
+  font-size: calc(var(--font-size-h2) - 4px);
+}
+
+.layout-native .section-title {
+  padding: var(--space-s) var(--space-base) var(--space-s) var(--space-base);
+}
+
+.section-group.is--sticky .section-title {  
+  position: -webkit-sticky;  
+  position: sticky;
+  z-index: 90;
+  top: calc(var(--section-top-position) + var(--os-safe-area-top));
+}
+
+.android[data-status-bar-height] .section-group.is--sticky .section-title {
+  top: calc(var(--section-top-position) + var(--status-bar-height));
+}
+
 .section-content { padding: var(--space-s) var(--space-none) var(--space-none); }
+
+.layout-native .section-content {
+  padding: 0;
+}
+
+/* Override default value from sticky position */
+.ios .layout-native .section-group .sticky {   
+  position: static;
+}

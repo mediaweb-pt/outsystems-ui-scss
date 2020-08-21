@@ -29,6 +29,18 @@
   }
 }
 
+.layout-native .section-index.is--sticky {
+  top: calc(var(--header-size) + var(--header-size-content) + var(--top-position) + var(--os-safe-area-top));
+}
+
+.android[data-status-bar-height] .layout-native .section-index.is--sticky  {
+  top: calc(var(--header-size) + var(--header-size-content) + var(--top-position) + var(--status-bar-height));
+}
+
+.ios .layout-native .section-index.is--sticky {
+  position: fixed;
+}
+
 a.section-index-item.is--active {
   border-left: var(--border-size-m) solid var(--color-primary);
   color: var(--color-neutral-9);
@@ -37,4 +49,10 @@ a.section-index-item.is--active {
 
 .edge .section-index.is--sticky {
   position: fixed;
+}
+
+/* Accessibility Styles */
+.has-accessible-features .section-index a:focus {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 3px var(--color-focus-outer);        
 }

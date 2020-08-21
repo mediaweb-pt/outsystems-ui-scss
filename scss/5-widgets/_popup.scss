@@ -17,3 +17,7 @@
   padding: var(--space-m);
   width: 100%;
 }
+.layout-native .popup-backdrop,
+.layout-native .popup-dialog {
+    padding: var(--space-base);
+}

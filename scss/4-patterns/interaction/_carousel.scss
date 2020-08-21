@@ -120,6 +120,17 @@
       &.active { background-color: var(--color-primary); }
     }
   }
+
+  .carousel-navigation{
+    &.carousel-navigation-left {
+      left: 24px;
+    }
+    &.carousel-navigation-right {
+      right: 24px;
+      text-align: right;
+    }
+  }
+  
   .carousel-navigation.hidden,
   .carousel-dots-container.disabled {
     display: none;
@@ -151,6 +162,11 @@
   
   /* Fix for lists inside Carousel */
   .list.list-group { overflow: initial; }
+}
+
+/* Accessibility Styles */
+.has-accessible-features .carousel .carousel-navigation:focus {
+  box-shadow:  0px 0px 0px 3px var(--color-focus-outer);    
 }
 
 

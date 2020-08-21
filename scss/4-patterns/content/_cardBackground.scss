@@ -9,6 +9,10 @@
   padding: var(--space-m);
   position: relative;
 
+  .layout-native & {
+    padding: var(--space-base);
+  }
+
   &-content{
     display: flex;
     position: relative;

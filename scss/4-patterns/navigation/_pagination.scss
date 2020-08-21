@@ -27,6 +27,16 @@
   > .pagination-button:first-child { margin-left: 0; }
 }
 
+.is-rtl .pagination-button .icon {
+  transform: rotate(180deg);
+}
+
+
+/* Accessibility Styles */
+.has-accessible-features .pagination-button:focus {
+  border-color: var(--color-focus-inner);
+}
+
 .pagination-button {
   align-items: center;
   background-color: var(--color-neutral-0);

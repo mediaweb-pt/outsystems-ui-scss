@@ -125,3 +125,69 @@
     opacity: 1;
   }
 }
+
+.floating-actions-wrapper.bottom-bar-exists {
+  bottom: calc(var(--bottom-bar-size) + var(--space-base));
+}
+
+.no-rotation.floating-actions-wrapper .floating-button {
+  transform:none;
+}
+
+.phone .layout-native .floating-actions-wrapper {
+  margin: var(--space-base);
+}
+
+.slide-from-left-enter .layout-native .floating-actions-wrapper,
+.slide-from-left-leave .layout-native .floating-actions-wrapper,
+.slide-from-right-enter .layout-native .floating-actions-wrapper,
+.slide-from-right-leave .layout-native .floating-actions-wrapper,
+.slide-from-top-enter .layout-native .floating-actions-wrapper,
+.slide-from-top-leave .layout-native .floating-actions-wrapper,
+.slide-from-bottom-enter .layout-native .floating-actions-wrapper,
+.slide-from-bottom-leave .layout-native .floating-actions-wrapper,
+.fade-enter .layout-native .floating-actions-wrapper,
+.fade-leave .layout-native .floating-actions-wrapper {
+  display: none;
+}
+
+/* Accessibility Styles */
+.has-accessible-features .floating-button:focus {
+  box-shadow: 0px 0px 0px 3px var(--color-focus-outer) ;    
+}
+
+.has-accessible-features .floating-actions-wrapper.is--open .floating-button:focus {
+  box-shadow:  0px 0px 0px 3px var(--color-focus-outer);
+}
+
+.is-rtl .floating-actions-wrapper {
+  right: auto;
+  left: 0;
+}
+
+.ios.phone.portrait .layout-native .floating-actions-wrapper {
+  margin-bottom: var(--os-safe-area-bottom);
+}
+
+.ios.tablet .floating-actions-wrapper.bottom-bar-exists {
+  margin-bottom: 0;
+}
+
+.ios.phone.landscape .layout-native .floating-actions-wrapper {
+  margin-right: calc(var(--os-safe-area-right) + var(--space-base));
+}
+
+.floating-actions-wrapper:not(.is--open) {
+  pointer-events: none;
+  -servicestudio-pointer-events: auto;
+}
+
+.floating-actions-wrapper.is--open .floating-actions-item {
+  opacity: 1;
+  -webkit-transform: translateY(0px) translateZ(0) scale(1);
+          transform: translateY(0px) translateZ(0) scale(1);
+  -webkit-transition: all 180ms ease-out;
+          transition: all 180ms ease-out;
+  -webkit-transition-delay: calc(var(--delay) * 40ms);
+          transition-delay: calc(var(--delay) * 40ms);
+}

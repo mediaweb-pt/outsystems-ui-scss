@@ -4,4 +4,8 @@
   border-radius: var(--border-radius-soft);
   border: var(--border-size-s) solid var(--color-neutral-4);
   padding: var(--space-m);
+  
+  .layout-native &{
+    padding: var(--space-base);
+  }
 }

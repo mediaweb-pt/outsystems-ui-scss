@@ -24,6 +24,33 @@
   }
 }
 
+.landscape .layout-native .sidebar {
+  padding-bottom: var(--os-safe-area-bottom);
+}
+
+.ios .layout-native .sidebar {
+  padding-bottom: var(--os-safe-area-bottom);
+  padding-top: var(--os-safe-area-top);
+}
+
+.android[data-status-bar-height] .layout-native .sidebar {
+  padding-top: var(--status-bar-height);
+}
+
+.sidebar:before {
+  background-color: transparent;
+  content: '';
+  left: -24px;
+  height: 100%;
+  width: 24px;
+  position: fixed;
+}
+
+.ios.phone.landscape .layout-native .sidebar:before {
+  left: calc((var(--os-safe-area-left) + 12px) * -1);
+  width: calc(var(--os-safe-area-left) + 12px);
+}
+
 .sidebar-header,
 .sidebar-content {
   padding: var(--space-base) var(--space-m);
@@ -33,6 +60,10 @@
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.tablet .layout-native .sidebar {
+  width: 336px;
 }
 
 .phone .sidebar { width: 85vw; }

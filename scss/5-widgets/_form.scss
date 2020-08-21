@@ -25,3 +25,56 @@ span.validation-message {
   font-size: var(--font-size-xs);
   margin-left: var(--space-none);
 }
+
+.form span {
+  position: relative;
+}
+
+.form span.validation-message {
+  bottom: -32px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.form.OSFillParent .form-control[class*="ThemeGrid_Width"].not-valid + span.validation-message {
+  left: 22px;
+}
+
+.form-control[class*="ThemeGrid_Width"].not-valid + span.validation-message {
+  left: 10px;
+}
+
+.phone .layout-native .form.OSFillParent .form-control[class*="ThemeGrid_Width"].not-valid + span.validation-message {
+  left: 6px;
+}
+
+.form .dropdown-container[class*="ThemeGrid_Width"].not-valid span.validation-message  {
+  bottom: 4px;
+}
+
+.form .dropdown-container.not-valid span.validation-message  {
+  bottom: -19px;
+}
+
+.form textarea.form-control.not-valid + span.validation-message  {
+  bottom: 8px;
+}
+
+.form textarea.form-control[class*="ThemeGrid_Width"] + span.validation-message  {
+  bottom: 0px;
+}
+
+.form .radio-group.not-valid {
+  position: relative;
+}
+
+.form .radio-group.not-valid span.validation-message {
+  bottom: -10px;
+}
+
+.phone .form.OSFillParent .form-control[class*="ThemeGrid_Width"].not-valid + span.validation-message,
+.phone .form-control[class*="ThemeGrid_Width"].not-valid + span.validation-message {
+  left: 0;
+}

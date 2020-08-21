@@ -14,6 +14,11 @@
     margin-right: var(--space-base);
   }
 
+  .is-rtl &-icon {
+    margin-left: var(--space-base);    
+    margin-right: 0;    
+  }
+
   &-message {
     flex: 1;
   }

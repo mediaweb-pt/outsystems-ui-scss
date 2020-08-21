@@ -29,6 +29,23 @@
   width: 100%;
 }
 
+/* $4.6.4 - Patterns - Utilities - MarginContainer */
+.margin-container {
+  padding: var(--space-m);
+}
+
+.layout-native .margin-container {
+  padding: var(--space-l);
+}
+
+.tablet .layout-native .margin-container {
+  padding: var(--space-m);
+}
+
+.phone .layout-native .margin-container {
+  padding: var(--space-base);
+}
+
 .main-content > [data-block*="CenterContent"] .center-content {
   -servicestudio-height: 100vh;
 }

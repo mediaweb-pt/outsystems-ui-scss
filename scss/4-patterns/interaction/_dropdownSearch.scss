@@ -197,5 +197,31 @@
   }
 }
 
+/* Accessibility Styles */ 
+.has-accessible-features .choices__inner {
+  border-color: var(--color-neutral-7);        
+}
+
+.has-accessible-features .choices__inner:hover {
+  border-color: var(--color-neutral-8);        
+}
+
+.has-accessible-features .choices.is-open.is-focused .choices__inner, 
+.has-accessible-features .choices[data-type="select-multiple"].is-open.is-focused .choices__inner {
+  border-color: var(--color-focus-inner);  
+}
+
+.has-accessible-features .choices[data-type*="select-one"] {
+  border-radius: var(--border-radius-soft);
+}
+
+.has-accessible-features .search--wrapper input:focus {
+  border-color: var(--color-focus-inner);
+}
+
+.has-accessible-features .choices[data-type="select-multiple"].is-open.is-focused .choices__inner {
+  box-shadow:  0px 0px 0px 3px var(--color-focus-outer);    
+}
+
 
 

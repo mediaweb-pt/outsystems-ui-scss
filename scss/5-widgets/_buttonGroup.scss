@@ -34,3 +34,65 @@
     color: var(--color-neutral-0);
   }
 }
+
+.tablet .button-group-item,
+.phone .button-group-item {
+    height: 48px;
+}
+
+.is-rtl .button-group-item:first-child {
+  border-radius: var(--border-radius-none) var(--border-radius-soft) var(--border-radius-soft) var(--border-radius-none);
+}
+
+.is-rtl .button-group-item:last-child {
+  border-radius: var(--border-radius-soft) var(--border-radius-none) var(--border-radius-none) var(--border-radius-soft)
+}
+
+.is-rtl .button-group-item:not(:first-child) {
+  border-right: var(--border-size-none);
+  border-left: var(--border-size-s) solid var(--color-primary);
+}
+
+.is-rtl .button-group-item:not(:first-child) {
+    border-right: var(--border-size-none);
+    border-left: var(--border-size-s) solid var(--color-primary);
+}
+
+.button-group-item.button-group-selected-item {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-0);
+}
+
+/* Button Group when used inside Header Content Placeholder */
+.layout-native .header-top-content .button-group-item:first-child,
+.layout-native .header-top-content .button-group-item:last-child {
+    border-radius: 0;
+}
+
+.layout-native .header-top-content .button-group-item {
+    border: 0;
+    color: var(--color-neutral-8);
+    border-bottom: var(--border-size-m) solid transparent;
+    background-color: var(--header-color);
+}
+
+.layout-native .header-top-content .button-group-item.button-group-selected-item {
+    color: var(--color-neutral-10);
+    border-bottom: var(--border-size-m) solid var(--color-primary);
+}
+
+/* Accessibility Styles */
+.has-accessible-features .button-group-item:focus {
+    box-shadow: none;
+}
+
+.has-accessible-features .button-group-item:focus:before  {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;    
+    bottom: -1px;
+    box-shadow: 0px 0px 0px 3px var(--color-focus-outer);
+    z-index: 2;
+}

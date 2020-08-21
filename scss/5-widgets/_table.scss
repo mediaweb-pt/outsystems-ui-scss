@@ -125,6 +125,38 @@ td:not([data-header]):before {
   display: none;
 }
 
+.phone .layout-native .table thead,
+.tablet .layout-native .table thead {
+    display: table-header-group;
+    
+}
+
+.phone .layout-native .table tr,
+.tablet .layout-native .table tr {
+    display: table-row;
+}
+
+.phone .layout-native td:before {
+    display: none;
+}
+
+.phone .layout-native .table {
+    display: block;
+    overflow: auto;
+    position: relative;
+    
+}
+
+.phone .layout-native .table td,
+.tablet .layout-native .table td {   
+    background: var(--color-neutral-0);
+    border-bottom: var(--border-size-s) solid var(--color-neutral-4);
+    display: table-cell;
+    padding: var(--space-s) var(--space-m);
+    vertical-align: inherit;
+    width: auto !important;
+}
+
 .sortable-icon {
   display: inline-block;
   height: 11px;

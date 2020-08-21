@@ -91,3 +91,47 @@
 [data-radio-button]:not(.OSFillParent):not([class*="ThemeGrid_Width"]) {
   -servicestudio-display: flex;
 }
+
+/* Accessibility Styles */
+.has-accessible-features .radio-button:before {
+  border-color: var(--color-neutral-7);      
+}
+
+.has-accessible-features .radio-button:checked:before, 
+.has-accessible-features [data-radio-group].not-valid [data-radio-button] .radio-button:checked:before {
+  border-color: var(--color-primary);    
+}
+
+.has-accessible-features .radio-button:hover:before {
+  border-color: var(--color-neutral-8);  
+}
+
+.has-accessible-features .radio-button:focus:before {
+  box-shadow: none;  
+  border: 1px solid var(--color-focus-inner);
+  background-color: var(--color-primary);
+} 
+
+.has-accessible-features .radio-button:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: var(--color-neutral-0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+}
+
+.has-accessible-features .radio-button:focus:before {
+  box-shadow: none;  
+  border: 1px solid var(--color-focus-inner);
+  background-color: var(--color-primary);
+} 
+
+.has-accessible-features .radio-button {
+  border-radius: var(--border-radius-rounded);
+}

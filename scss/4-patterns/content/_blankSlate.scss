@@ -1,13 +1,10 @@
 /* $4.2.3 - Patterns - Content - BlankSlate */
 .blank-slate {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 
-  &-content {
-    position: relative;
-    text-align: center;
-    z-index: 1;
-  }
   &-description {
     color: var(--color-neutral-9);
     padding: var(--space-none) var(--space-base);

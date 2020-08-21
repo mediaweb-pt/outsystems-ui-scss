@@ -16,7 +16,11 @@
   &.is-hidden {
     display: none;
   }
+  .layout-native & {
+    max-width: 100%;
+  }
 }
+
 
 input.OSFillParent.calendar-input {
   display: none;
@@ -72,9 +76,16 @@ input.OSFillParent.calendar-input {
 
 .pika-next {
   margin-left: var(--space-base);
-
-  &:before { content: "\f105"; }
+  &:before { 
+    content: "\f105"; 
+  }
+  .is-rtl & {
+    margin-left: 0;
+    margin-right: var(--space-base);
+  }
 }
+
+
 
 .pika-prev:before { content: "\f104"; }
 
@@ -367,4 +378,9 @@ input.OSFillParent.calendar-input {
   background-color: var(--color-neutral-0);
   color:  var(--color-neutral-10);
   height: auto;
+}
+´
+/* Fix datepicker when inside Popup Widget */
+.portal-class ~ .pika-single.is-bound {
+  z-index: 251;
 }

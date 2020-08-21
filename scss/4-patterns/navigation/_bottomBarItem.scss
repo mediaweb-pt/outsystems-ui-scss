@@ -30,6 +30,12 @@
   }
 }
 
+/* Accessibility Styles */
+.has-accessible-features .bottom-bar > a:focus {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 3px var(--color-focus-outer);    
+}
+
 .bottom-bar-item{
   display: flex;
   flex-direction: column;

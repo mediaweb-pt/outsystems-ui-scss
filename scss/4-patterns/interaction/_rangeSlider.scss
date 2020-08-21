@@ -140,6 +140,12 @@
   &.noUi-pips-margin { margin-bottom: 60px; }
 }
 
+/* Accessibility Styles */
+.has-accessible-features .range-slider .noUi-handle:focus {
+  box-shadow: 0px 0px 0px 3px var(--color-focus-outer);
+  border-color: var(--color-focus-inner);
+}
+
 .noUi-background { box-shadow: none; }
 
 .noUi-origin{

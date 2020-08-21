@@ -167,6 +167,10 @@
   }
 }
 
+.is-rtl .wizard-vertical .wizard-item-icon-wrapper {
+  margin: var(--space-none) var(--space-none) var(--space-none) var(--space-s);
+}
+
 .wizard-item-label {
   color: var(--color-neutral-7);
   text-align: center;
@@ -201,4 +205,8 @@
       }
     }
   }
+}
+
+.is-rtl .wizard-vertical .wizard-wrapper-item.label-top .wizard-item-icon-wrapper {
+  margin: var(--space-none) var(--space-s) var(--space-none) var(--space-none);
 }
