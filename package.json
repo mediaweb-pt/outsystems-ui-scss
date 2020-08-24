@@ -8,9 +8,9 @@
     "url": "https://github.com/mediaweb-pt/outsystems-ui-scss"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.1",
+    "autoprefixer": "^9.8.6",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "postcss-cli": "^6.1.3"
   },

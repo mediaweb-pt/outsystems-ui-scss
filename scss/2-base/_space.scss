@@ -34,6 +34,38 @@
 .padding-right-xl { padding-right: var(--space-xl); }
 .padding-right-xxl { padding-right: var(--space-xxl); }
 
+.is-rtl .padding-right-none { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-xs { 
+  padding-left: var(--space-xs); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-s { 
+  padding-left: var(--space-s); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-base { 
+  padding-left: var(--space-base); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-m { 
+  padding-left: var(--space-m); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-l { 
+  padding-left: var(--space-l); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-xl { 
+  padding-left: var(--space-xl);
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-right-xxl { 
+  padding-left: var(--space-xxl); 
+  padding-right: var(--space-none); 
+}
 
 /* $6.3.4 - Styles - Space - Padding Bottom */
 .padding-bottom-none { padding-bottom: var(--space-none); }
@@ -56,6 +88,38 @@
 .padding-left-xl { padding-left: var(--space-xl); }
 .padding-left-xxl { padding-left: var(--space-xxl); }
 
+.is-rtl .padding-left-none { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-none); 
+}
+.is-rtl .padding-left-xs { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-xs); 
+}
+.is-rtl .padding-left-s { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-s); 
+}
+.is-rtl .padding-left-base { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-base); 
+}
+.is-rtl .padding-left-m { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-m); 
+}
+.is-rtl .padding-left-l { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-l); 
+}
+.is-rtl .padding-left-xl { 
+  padding-left: var(--space-none);
+  padding-right: var(--space-xl); 
+}
+.is-rtl .padding-left-xxl { 
+  padding-left: var(--space-none); 
+  padding-right: var(--space-xxl); 
+}
 
 /* $6.3.6 - Styles - Space - Padding Vertical */
 .padding-y-none {
@@ -160,6 +224,38 @@
 .margin-right-xl { margin-right: var(--space-xl); }
 .margin-right-xxl { margin-right: var(--space-xxl); }
 
+.is-rtl .margin-right-none { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-xs { 
+  margin-left: var(--space-xs); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-s { 
+  margin-left: var(--space-s); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-base { 
+  margin-left: var(--space-base); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-m { 
+  margin-left: var(--space-m); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-l { 
+  margin-left: var(--space-l); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-xl { 
+  margin-left: var(--space-xl);
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-right-xxl { 
+  margin-left: var(--space-xxl); 
+  margin-right: var(--space-none); 
+}
 
 /* $6.3.11 - Styles - Space - Margin Bottom */
 .margin-bottom-none { margin-bottom: var(--space-none); }
@@ -182,6 +278,38 @@
 .margin-left-xl { margin-left: var(--space-xl); }
 .margin-left-xxl { margin-left: var(--space-xxl); }
 
+.is-rtl .margin-left-none { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-none); 
+}
+.is-rtl .margin-left-xs { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-xs); 
+}
+.is-rtl .margin-left-s { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-s); 
+}
+.is-rtl .margin-left-base { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-base); 
+}
+.is-rtl .margin-left-m { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-m); 
+}
+.is-rtl .margin-left-l { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-l); 
+}
+.is-rtl .margin-left-xl { 
+  margin-left: var(--space-none);
+  margin-right: var(--space-xl); 
+}
+.is-rtl .margin-left-xxl { 
+  margin-left: var(--space-none); 
+  margin-right: var(--space-xxl); 
+}
 
 /* $6.3.13 - Styles - Space - Margin Vertical */
 .margin-y-none {
